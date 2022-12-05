@@ -1,0 +1,43 @@
+site_name: Computer Science Literacy Course
+site_author: Andrea Diamantini
+copyright: Andrea Diamantini (c) 2022
+
+# -----------------------------------------------------------------------------------------------
+
+theme:
+  name: material
+  palette:
+    primary: pink
+  font:
+    text: Roboto
+    code: Roboto Mono
+  language: it
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+  plugins:
+    - search:
+        lang: it
+
+extra_css:
+- stylesheets/extra.css
+
+# -----------------------------------------------------------------------------------------------
+
+markdown_extensions:
+  - toc: {permalink: True}
+  - admonition: {}
+  - attr_list: {}
+  - def_list: {}
+  - pymdownx.tasklist: {custom_checkbox: True}
+  - pymdownx.superfences: {}
+  - pymdownx.emoji: {}
+  
+# -----------------------------------------------------------------------------------------------
+ 
+nav:
+  - Home: index.md
+
+
