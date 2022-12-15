@@ -34,10 +34,18 @@ markdown_extensions:
   - pymdownx.tasklist: {custom_checkbox: True}
   - pymdownx.superfences: {}
   - pymdownx.emoji: {}
-  
+
 # -----------------------------------------------------------------------------------------------
  
 nav:
   - Home: index.md
-
+  - Basics:
+    - Introduzione: basics/00_intro.md
+  - Hardware & Software:
+    - Introduzione: hwsw/00_intro.md
+  - Libreoffice:
+    - Introduzione: libreoffice/00_intro.md
+  - Web:
+    - Introduzione: web/00_intro.md
+  - About: about.md
 
