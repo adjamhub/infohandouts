@@ -8,6 +8,7 @@ theme:
   name: material
   palette:
     primary: pink
+    accent: amber
   font:
     text: Roboto
     code: Roboto Mono
