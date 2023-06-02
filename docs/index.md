@@ -2,6 +2,7 @@
 hide:
   - navigation
   - toc
+  - footer
 ---
 <style>
 .w3-row:after,.w3-row:before{content:"";display:table;clear:both}
@@ -15,13 +16,11 @@ hide:
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 <section class="">
 
-<div>
-<h1 style="font-weight:bold">Alfabetizzazione Informatica</h1>
+<h1 style="font-weight:bold;margin:0px">Alfabetizzazione Informatica</h1>
 <p>Le dispense per le lezioni di informatica del prof...</p>
+
 <br>
-<a href="/hwsw/basics/00_intro" class="md-button md-button--primary">Hardware & Software!</a>
-<a href="/web/00_intro" class="md-button">Realizziamo un sito web!</a>
-</div>
+<br>
 
 </section>
 
@@ -31,24 +30,32 @@ hide:
 <div class="w3-row">
 
 <div class="w3-half" style="padding:0 20px 0 0">
-<h3>Basics</h3>
+<a href="basics/00_intro/" class="md-button md-button--primary" style="width:300px">Basics</a>
 <p>Informazioni di base sull'informatica: le parole che si usano, i concetti ricorrenti, la storia da cui si arriva ai giorni nostri</p>
+<br>
+<br>
 </div>
 
 <div class="w3-half" style="padding:0 0 0 20px">
-<h3>Hardware & Software</h3>
+<a href="/hwsw/00_intro" class="md-button" style="width:300px">Hardware & Software!</a>
 <p>I concetti di base dell'informatica! L'hardware, la sua struttura di base, i componenti principali. 
 Il software, i sistemi operativi, i programmi applicativi</p>
+<br>
+<br>
 </div>
 
 <div class="w3-half" style="padding:0 20px 0 0">
-<h3>Libreoffice</h3>
+<a href="libreoffice/00_intro/" class="md-button" style="width:300px">Libreoffice</a>
 <p>Una suite da ufficio libera, gratuita e multipiattaforma! Impariamo le operazioni di base con i più comuni software da ufficio!</p>
+<br>
+<br>
 </div>
 
 <div class="w3-half" style="padding:0 0 0 20px">
-<h3>Web</h3>
+<a href="web/00_intro/" class="md-button" style="width:300px">Web</a>
 <p>Realizzare un (semplice) sito web in poco tempo per apprendere la logica di base dei linguaggi del web!</p>
+<br>
+<br>
 </div>
 
 </div>
