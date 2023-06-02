@@ -74,10 +74,13 @@ nav:
   - Home: index.md
   - Basics:
     - Introduzione: basics/00_intro.md
+    - Prime cose: basics/01_prime_cose.md
+    - Informazioni Binarie: basics/05_info_binarie.md
   - Hardware & Software:
     - Introduzione: hwsw/00_intro.md
   - Libreoffice:
     - Introduzione: libreoffice/00_intro.md
+    - Writer: libreoffice/51_writer.md
   - Web:
     - Introduzione: web/00_intro.md
   - About: about.md
