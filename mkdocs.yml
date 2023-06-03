@@ -78,6 +78,7 @@ nav:
     - Informazioni Binarie: basics/05_info_binarie.md
   - Hardware & Software:
     - Introduzione: hwsw/00_intro.md
+    - Software: hwsw/10_sw.md
   - Libreoffice:
     - Introduzione: libreoffice/00_intro.md
     - Writer: libreoffice/51_writer.md

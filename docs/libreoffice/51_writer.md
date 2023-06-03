@@ -259,7 +259,7 @@ automaticamente nell'indice, ma dovranno essere inseriti
 dall'interfaccia grafica selezionandone il nome ed indicando il livello
 
 
-![indice generale o analitico](indica.jpg)
+![indice generale o analitico](indice.jpg)
 
 
 Dalla finestra di inserimento indice, mettete la spunta su "stili
