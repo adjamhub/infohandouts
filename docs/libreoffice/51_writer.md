@@ -1,16 +1,4 @@
-LibreOffice
-
-Writer
-
-Copyright © 2018-2021 by Andrea Diamantini \<adjam@protonmail.com\>
-
-Rilasciata sotto la licenza **Creative Commons Attribuzione - Non
-commerciale - Condividi allo stesso modo 3.0 Italia**.
-
-*Per leggere una copia della licenza, visita il sito web
-*[*http://creativecommons.org/licenses/by-nc-sa/3.0/it/*](http://creativecommons.org/licenses/by-nc-sa/3.0/it/)
-
-# Editor di Documenti
+# Libreoffice Writer, un Editor di Documenti
 
 Un editor di documenti è un software per la composizione di testi in
 formato elettronico.
@@ -26,12 +14,14 @@ Esempi di editor di documenti sono i comunissimi Microsoft Word e
 LibreOffice Writer. Noi qui (lo avrete capito) approcciamo un po\'
 l'editor LibreOffice Writer.
 
-## LibreOffice Writer
 
-![](./1000000000000556000002E82DB1396229A9704C.png){width="17.59cm"
-height="9.58cm"}
 
-# Operazioni di base
+![Editor di documenti](doc_editor.png)
+
+
+
+## Operazioni di base
+
 
 Non starò qui a spiegare come si apre, si crea, si salva e si chiude un
 documento: sono operazioni basilari che dovremmo già aver recepito
@@ -40,20 +30,25 @@ semplicemente usando qualsiasi tipo di software.
 Vorrei solo far notare che Writer, oltre alla possibilità banale di
 partire da un documento vuoto, ha la possibilità di:
 
--   ![](./100000000000024900000149880B520FA673779E.jpg){width="7.759cm"
-    height="4.364cm"}creare lettere, fax e altro tramite una procedura
-    guidata,
+- creare lettere, fax e altro tramite una procedura guidata,
+    
+  ![procedure guidate](procedure_guidate.jpg)
+  
 
--   ![](./100000000000028800000113CAE52AAF46C08FCC.jpg){width="7.8cm"
-    height="3.311cm"}partire da un modello di base salvato nel PC,
+- partire da un modello di base salvato nel PC,
 
--   scaricare un modello gratuito a piacimento
+  ![modelli](modelli.jpg)
 
-    dal sito <https://extensions.libreoffice.org/templates>.
+
+- scaricare un modello gratuito a piacimento dal sito <a target="_blank" href="https://extensions.libreoffice.org/templates">https://extensions.libreoffice.org/templates</a>.
+
 
 Basta provare ;)
 
-# Stili
+
+
+## Stili
+
 
 Questo capitolo è il più complicato da spiegare di tutto il corso su
 Writer, perché fa notare delle ovvietà che ai più non sono affatto
@@ -70,8 +65,9 @@ No!
 Per diventare un titolo bisogna modificarne lo stile! Guardate la figura
 sotto (è orribile, lo so).
 
-![](./10000000000003280000007A8E9ADF4FAAB5F966.jpg){width="17.59cm"
-height="2.655cm"}
+
+![stili](stili.jpg)
+
 
 Per ottenere un titolo, bisogna modificarne lo stile da "Corpo del
 testo" o "Stile predefinito" in "Titolo 1" oppure "Titolo 2"... non
@@ -81,7 +77,10 @@ Ogni titolo del nostro testo deve avere applicato uno degli stile titolo
 disponibili. Così i paragrafi che compongono un capitolo devono essere
 tutti di stile "Corpo del testo" oppure uno stile derivato da questi.
 
-## Gestire gli stili
+
+
+### Gestire gli stili
+
 
 In LibreOffice 6.x è comparso addirittura un menù dedicato agli stili
 per permettere agli utenti di gestire al meglio questo importantissimo
@@ -101,7 +100,10 @@ stesura di qualsiasi documento non banale.
 Come si crea uno stile, si modifica e si applica ad un documento lo
 vediamo a lezione.
 
-## Stili per Carattere, Paragrafo, Pagina
+
+
+### Stili per Carattere, Paragrafo, Pagina
+
 
 Gli stili si applicano ad un contesto. E i contesti in un editor di
 documenti sono solitamente tre:
@@ -110,7 +112,9 @@ documenti sono solitamente tre:
 2.  Paragrafo
 3.  Pagina
 
-Stili per carattere
+---
+
+**Stili per carattere**
 
 Come si fa a scrivere una parola in **grassetto** *sottolineato*?
 Semplice! Si evidenzia la parola e si clicca su uno dei pulsanti sopra.
@@ -131,7 +135,9 @@ Seleziona una parola qualsiasi, poi apri il menù FORMATO e scorri fino a
 CARATTERE: lì trovi tutti gli stili che Writer può applicare ad un
 carattere.
 
-Stili per paragrafo
+---
+
+**Stili per paragrafo**
 
 Uno stile viene applicato ad un paragrafo quando tutte le parole che
 fanno parte di quel paragrafo ottengono immediatamente lo stile dello
@@ -147,7 +153,9 @@ poi aprite il menù FORMATO e scorrete fino a PARAGRAFO vedrete che ogni
 modifica che fate lì viene applicata immediatamente a TUTTO il
 paragrafo!
 
-Stili per pagina
+---
+
+**Stili per pagina**
 
 Ormai avrete capito che per modificare lo stile della pagina basta
 andare sul menù FORMATO e selezionare PAGINA. Lì trovate tutti gli stili
@@ -157,18 +165,29 @@ l'intestazione (di pagina) e il piè di pagina, che vedremo fra poco.
 Ricordate solo che ***ogni modifica allo stile di pagina si applica***
 non alla pagina corrente, ma ***a tutte le pagine del documento***!
 
-# Caratteristiche aggiuntive
+
+
+## Caratteristiche aggiuntive
+
 
 Esistono una serie di opzioni aggiuntive che possono essere inserite in
 un documento Writer per abbellirne l'aspetto o modificarne il
 comportamento. Vediamo le opzioni più importanti:
 
-## Intestazioni e piè di pagina
 
-![](./10000000000001AC0000024C6E93475D8271AF09.jpg){width="6.712cm"
-height="9.22cm"}L'intestazione di pagina e il piè di pagina, in inglese
-***header*** e ***footer***, mentre la parte centrale dove compare il
-testo viene chiamata ***body***, sono due aree *separate* del foglio che
+
+### Intestazioni e piè di pagina
+
+
+![Intestazioni e piè di pagina](header_footer.jpg)
+
+!!! tip "In Inglese"
+    L'intestazione di pagina si chiama ***header***,
+    Il piè di pagina si definisce ***footer***.<br>
+    Continuando l'analogia, il corpo della pagina viene chiamato ***body***
+  
+
+L'intestazione e il piè di pagina sono due aree *separate* del foglio che
 si trovano rispettivamente sopra e sotto il corpo centrale della pagina.
 
 Queste due aree appartengono allo stile della pagina e saranno quindi
@@ -183,7 +202,9 @@ titolo del capitolo, etc...) oppure informazioni da calcolare (data di
 ultima modifica, numero della pagina, totale delle pagine, etc...) sarà
 interessante utilizzare un comando di campo.
 
-## Comandi di campo
+
+### Comandi di campo
+
 
 Un comando di campo è una istruzione che impone a Writer di desumere
 un'informazione dal documento stesso e di visualizzarla nel punto ove il
@@ -193,15 +214,17 @@ poi dal menù INSERISCI selezionare COMANDO DI CAMPO.
 
 Sono disponibili i seguenti comandi di campo:
 
--   Numero di pagina
--   Conteggio pagine
--   Data
--   Orario
--   Titolo
--   Primo autore
--   Oggetto
+- Numero di pagina
+- Conteggio pagine
+- Data
+- Orario
+- Titolo
+- Primo autore
+- Oggetto
 
-## Indice Generale e Indice Analitico
+
+### Indice Generale e Indice Analitico
+
 
 Un indice generale è un elenco di tutti i titoli presenti nel nostro
 documento, in ordine di apparizione e con il numero di pagina vicino.
@@ -229,21 +252,25 @@ ma attenzione!!! Se modificate il documento, aggiungendo pagine, titoli
 e quant'altro, va aggiornato con un click, tasto destro e azione
 AGGIORNA.
 
-Ricordatelo!!!
+**Ricordatelo!!!**
 
 Se modifichiamo gli stili dei titoli questi non saranno inseriti
 automaticamente nell'indice, ma dovranno essere inseriti
 dall'interfaccia grafica selezionandone il nome ed indicando il livello
 
-![](./10000000000005300000028AD72C087B89E458C0.jpg){width="17.59cm"
-height="8.608cm"}
+
+![indice generale o analitico](indica.jpg)
+
 
 Dalla finestra di inserimento indice, mettete la spunta su "stili
 aggiuntivi", poi dal pulsante "Assegna Stili" andate ad indicare il
 livello dello stile che avete creato: 1 se volete che il vostro stile
 sia un Titolo1, 2 se volete un Titolo2, etc...
 
-# Inserimento oggetti speciali
+
+
+## Inserimento oggetti speciali
+
 
 In un documento LibreOffice si possono inserire vari tipi di oggetti
 speciali: immagini, video, grafici business, formule matematiche, forme
@@ -251,7 +278,10 @@ geometriche e oggetti grafici in genere, cornici, fontwork, etc...
 
 Vediamo l'inserimento di alcuni degli oggetti più comuni
 
-## Collegamenti
+
+
+### Collegamenti
+
 
 I collegamenti ipertestuali (i link) si possono assegnare su LibreOffice
 ad un qualunque oggetto (un testo, una immagine, etc...). Per inserire
@@ -266,7 +296,10 @@ ATTENZIONE!
 In Writer, click e doppio click selezionano un oggetto! Per aprire un
 collegamento occorre selezionare CTRL + CLICK.
 
-## Tabelle
+
+
+### Tabelle
+
 
 Le tabelle sono una caratteristica peculiare dei documenti con
 formattazione: sono molto utili e permettono di organizzare le
@@ -279,7 +312,9 @@ automaticamente quando si lavora su una tabella...
 Tra gli esercizi ce ne sono alcuni espressamente dedicati a lavorare con
 le tabelle.
 
-## Immagini
+
+
+### Immagini
 
 Inserire un'immagine è molto semplice: dal menù INSERISCI, selezionare
 IMMAGINE, da qui selezionare il file e premere invio.
@@ -287,17 +322,14 @@ IMMAGINE, da qui selezionare il file e premere invio.
 Per permettere all'immagine di posizionarsi correttamente secondo il
 nostro volere bisogna considerare alcune cose:
 
-+----------------------------+----------------------------------------+
 | Proprietà                  | Descrizione                            |
-+----------------------------+----------------------------------------+
-| Ancoraggio                 | Stabilisce come l'immagine è legata al |
-|                            | testo. Può essere ancorata:            |
-+----------------------------+----------------------------------------+
+|----------------------------|----------------------------------------|
+| Ancoraggio                 | Stabilisce come l'immagine è legata al testo. Può essere ancorata:            |
+|                            |                                        |
 | Scorrimento                | Stabilisce in quale modo il testo      |
 |                            | debba scorrere sull'immagine e se esso |
 |                            | possa attraversarla. Opzioni           |
 |                            | possibili:                             |
-+----------------------------+----------------------------------------+
 | Allineamento               | Stabilisce l'allineamento              |
 |                            | dell'immagine rispetto all'ancoraggio. |
 |                            | Opzioni possibili.                     |
@@ -307,7 +339,6 @@ nostro volere bisogna considerare alcune cose:
 |                            |                                        |
 |                            | Allineamento verticale: **in alto, al  |
 |                            | centro, in basso**                     |
-+----------------------------+----------------------------------------+
 | Bordi e distanza dal testo | Sono parametri che si possono          |
 |                            | modificare dalle proprietà             |
 |                            | dell'immagine.                         |
@@ -320,9 +351,10 @@ nostro volere bisogna considerare alcune cose:
 |                            | Lavorando su questi due parametri si   |
 |                            | mette meglio in evidenza l'immagine e  |
 |                            | si rende più leggibile il testo.       |
-+----------------------------+----------------------------------------+
 
-## Fontwork
+
+
+### Fontwork
 
 I Fontwork sono font speciali tramite le quali inserire un testo
 accattivante e molto evidente dei documenti. È una possibilità
@@ -338,30 +370,35 @@ click e procedere alla modifica del testo da visualizzare. ESC per
 concludere. Clic sinistro sopra la scritta per attivare i bordi di
 ridimensionamento. Tutto qui :)
 
-# Esercizi
+
+
+## Esercizi
 
 Gli esercizi sono... nel PC del prof. Qui trovate elencati solo il
 codice dell'esercizio (ad esempio: W01) e gli argomenti su cui esso si
 basa.
 
-Esercizi W0x
 
-Esercizi con gli stili predefiniti, sommario, intestazione e piè di
-pagina.
+**Esercizi W0x**
+
+Esercizi con gli stili predefiniti, sommario, intestazione e piè di pagina.
+
 
 **Esercizi W1x**
 
 Esercizi con gli stili personali (da creare).
 
-Esercizi W2x
+
+**Esercizi W2x**
 
 Esercizi con le immagini
 
-Esercizi W3x
+
+**Esercizi W3x**
 
 Esercizi con le tabelle
 
-Esercizi W4x
 
-Esercizi complessi, contenenti tutte le cose studiate, simili alla
-verifica.
+**Esercizi W4x**
+
+Esercizi complessi, contenenti tutte le cose studiate, simili alla verifica.

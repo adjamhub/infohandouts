@@ -81,6 +81,7 @@ nav:
   - Libreoffice:
     - Introduzione: libreoffice/00_intro.md
     - Writer: libreoffice/51_writer.md
+    - Calc: libreoffice/52_calc.md
   - Web:
     - Introduzione: web/00_intro.md
   - About: about.md
