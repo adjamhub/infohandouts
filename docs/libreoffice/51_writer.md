@@ -291,10 +291,12 @@ scegliete COLLEGAMENTO!
 A quel punto dovete solo inserire l'URL di destinazione, ovvero
 l'indirizzo del sito che volete aprire quando si clicca l'oggetto!
 
-ATTENZIONE!
 
-In Writer, click e doppio click selezionano un oggetto! Per aprire un
-collegamento occorre selezionare CTRL + CLICK.
+!!! warning "Attenzione!!!"
+
+    In Writer, click e doppio click selezionano un oggetto! 
+    
+    Per aprire un collegamento occorre selezionare **CTRL + CLICK**.
 
 
 
