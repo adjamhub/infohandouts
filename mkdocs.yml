@@ -79,11 +79,13 @@ nav:
   - Hardware & Software:
     - Introduzione: hwsw/00_intro.md
     - Software: hwsw/10_sw.md
+    - Hardware: hwsw/20_hw.md
   - Libreoffice:
     - Introduzione: libreoffice/00_intro.md
     - Writer: libreoffice/51_writer.md
     - Calc: libreoffice/52_calc.md
   - Web:
     - Introduzione: web/00_intro.md
+    - HTML5: web/10_html5.md
   - About: about.md
 
