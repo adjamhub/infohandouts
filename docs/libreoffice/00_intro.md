@@ -1,6 +1,5 @@
 # LibreOffice
 
-## Una pagina di storia
 
 LibreOffice è una suite di programmi per l'ufficio: contiene un editor
 di documenti, un foglio elettronico, un programma per le presentazioni
@@ -8,6 +7,36 @@ multimediali, un database manager, un programma di disegno, uno per le
 formule matematiche... insomma, più o meno tutto quello che possa
 servire di fare in un ufficio quando si hanno a che fare con dati e
 documenti.
+
+Le sue caratteristiche peculiari sono che tutta la suite è un software rilasciato con licenza libera e gratuita
+e che supporta attualmente tutti i maggiori sistemi operativi desktop: Windows, Mac, Linux.
+
+
+![libreoffice icons](lo_icons.png)
+
+
+Nell'ordine dall'alto a sinistra, le icone di:
+
+- LibreOffice **Writer**, per i documenti
+- LibreOffice **Calc**, per i fogli elettronici
+- LibreOffice **Impress**, per le presentazioni multimediali
+- LibreOffice **Draw**, per il disegno vettoriale
+- LibreOffice **Base**, per i database
+- LibreOffice **Math**, per le formule matematiche
+
+
+
+Dalla versione 6, LibreOffice comprende anche una interfaccia iniziale, 
+chiamata semplicemente LibreOffice e che viene identificata dall'icona qui sotto!
+
+
+![libreoffice icon](lo_icon.png)
+
+
+## Una pagina di storia
+
+
+La suite Libreoffice appartiene al grande filone delle suite da ufficio
 
 Questa tipologia di software si sviluppa sin dagli anni '80, con i
 mitici WordStar, Lotus 1-2-3, dBase III, Harvard Graphics;
@@ -33,8 +62,7 @@ formati opensource per la gestione dei dati nei documenti***.
 
 La Document Foundation è sostenuta fin dalla sua fondazione da
 importanti aziende del mondo informatico, quali
-[Novell](https://it.wikipedia.org/wiki/Novell), [Red
-Hat](https://it.wikipedia.org/wiki/Red_Hat),
+[Novell](https://it.wikipedia.org/wiki/Novell), [Red Hat](https://it.wikipedia.org/wiki/Red_Hat),
 [Canonical](https://it.wikipedia.org/wiki/Canonical) e
 [Google](https://it.wikipedia.org/wiki/Google).
 
@@ -44,30 +72,6 @@ opensource per la gestione dei dati nei documenti? Beh... pensaci! In
 fin dei conti, è roba tua!
 
 
-
-## La suite LibreOffice
-
-
-
-![libreoffice icons](lo_icons.png)
-
-
-Nell'ordine dall'alto a sinistra, le icone di:
-
-- LibreOffice **Writer**, per i documenti
-- LibreOffice **Calc**, per i fogli elettronici
-- LibreOffice **Impress**, per le presentazioni multimediali
-- LibreOffice **Draw**, per il disegno vettoriale
-- LibreOffice **Base**, per i database
-- LibreOffice **Math**, per le formule matematiche
-
-
-
-La versione in oggetto è LibreOffice 6.x che comprende anche una interfaccia iniziale, 
-chiamata semplicemente LibreOffice e che viene identificata dall'icona qui sotto!
-
-
-![libreoffice icon](lo_icon.png)
 
 
 ## Formato standard aperto
