@@ -86,6 +86,6 @@ nav:
     - Calc: libreoffice/52_calc.md
   - Web:
     - Introduzione: web/00_intro.md
-    - HTML5: web/10_html5.md
-  - About: about.md
+    - HTML: web/10_html5.md
+#  - About: about.md
 
