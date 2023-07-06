@@ -29,14 +29,14 @@ hide:
 
 <div class="w3-row">
 
-<div class="w3-half" style="padding:0 20px 0 0">
+<div class="w3-half" style="padding:0 10px">
 <a href="basics/00_intro/" class="md-button md-button--primary" style="width:300px">Basics</a>
 <p>Informazioni di base sull'informatica: le parole che si usano, i concetti ricorrenti, la storia da cui si arriva ai giorni nostri</p>
 <br>
 <br>
 </div>
 
-<div class="w3-half" style="padding:0 0 0 20px">
+<div class="w3-half" style="padding:0 10px">
 <a href="/hwsw/00_intro" class="md-button" style="width:300px">Hardware & Software!</a>
 <p>I concetti di base dell'informatica! L'hardware, la sua struttura di base, i componenti principali. 
 Il software, i sistemi operativi, i programmi applicativi</p>
@@ -44,14 +44,14 @@ Il software, i sistemi operativi, i programmi applicativi</p>
 <br>
 </div>
 
-<div class="w3-half" style="padding:0 20px 0 0">
+<div class="w3-half" style="padding:0 10px">
 <a href="libreoffice/00_intro/" class="md-button" style="width:300px">Libreoffice</a>
 <p>Una suite da ufficio libera, gratuita e multipiattaforma! Impariamo le operazioni di base con i più comuni software da ufficio!</p>
 <br>
 <br>
 </div>
 
-<div class="w3-half" style="padding:0 0 0 20px">
+<div class="w3-half" style="padding:0 10px">
 <a href="web/00_intro/" class="md-button" style="width:300px">Web</a>
 <p>Realizzare un (semplice) sito web in poco tempo per apprendere la logica di base dei linguaggi del web!</p>
 <br>
