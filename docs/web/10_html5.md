@@ -208,11 +208,13 @@ capo!</p>
 E se volessimo addirittura interrompere o separare due paragrafi con una
 bella linea orizzontale? Basta aggiungere un tag HR!
 
+``` html
 <p>Paragrafo SOPRA la linea</p>
 
 <hr> <!-- LINEA ORIZZONTALE -->
 
 <p>Paragrafo SOTTO la linea</p>
+```
 
 ## Il problema delle poesie in HTML
 
