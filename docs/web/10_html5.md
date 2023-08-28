@@ -1,6 +1,6 @@
 # HTML
 
-HTML Sta per Hyper Textual Markup Language.
+HTML Sta per ***Hyper Textual Markup Language***.
 
 Siamo alla versione 5.x
 
@@ -34,6 +34,10 @@ La struttura di base di una pagina web (HTML 5.x) è la seguente:
 
 </html>
 ```
+
+Per provare, copiate l'esempio sopra su un editor di testo (ad esempio, il Blocco Note di Windows) e salvate il file con estensione `.html` (ad esempio, con il nome `prova.html`).
+
+Poi, fate doppio click sopra il file...
 
 ## Tag HTML: elementi e attributi
 
