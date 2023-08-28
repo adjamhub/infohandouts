@@ -219,15 +219,10 @@ trascritto. Provare per credere!
 
 ``` html
 <pre>
-
 Si sta come
-
 d'autunno
-
 sugli alberi
-
 le foglie
-
 </pre>
 ```
 
