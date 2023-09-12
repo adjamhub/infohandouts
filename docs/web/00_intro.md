@@ -14,10 +14,10 @@ ospitano i siti ai browser nei computer delle persone che vogliono
 navigare (nel WEB). Le pagine web sono scritte facendo "collaborare"
 fra loro un mix di tecnologie, tra cui:
 
-- [HTML](/web/10_html5/), il linguaggio di markup delle pagine web
-- [CSS](/web/20_css/), il linguaggio che serve a definire gli stili delle pagine
-- [JAVASCRIPT](/web/30_js/), un linguaggio di programmazione web lato client
-- [PHP](/web/40_php/), un linguaggio di programmazione web lato server
+- [HTML](10_html5.md), il linguaggio di markup delle pagine web
+- [CSS](20_css.md), il linguaggio che serve a definire gli stili delle pagine
+- [JAVASCRIPT](30_js.md), un linguaggio di programmazione web lato client
+- [PHP](40_php.md), un linguaggio di programmazione web lato server
 
 Questi primi esempi non esauriscono la quantità di tecnologia diversa e
 "organizzata" tramite la quale è composto il www, ma di sicuro
