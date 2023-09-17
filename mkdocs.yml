@@ -74,7 +74,7 @@ nav:
   - Home: index.md
   - Basics:
     - Introduzione: basics/00_intro.md
-    - Prime cose: basics/01_prime_cose.md
+    - Storia: basics/01_storia.md
     - Informazioni Binarie: basics/05_info_binarie.md
   - Hardware & Software:
     - Introduzione: hwsw/00_intro.md
