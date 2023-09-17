@@ -62,7 +62,7 @@ digitali.
 
 **I primi calcolatori elettronici (ventesimo secolo)**
 
-L'ingegnere giapponese ***Akira Nakajima*** nel 1930 intuisce il ***legame** fra l'**algebra booleana** (la teoria del vero/falso) e la **logica dei circuiti elettronici***: 
+L'ingegnere giapponese ***Akira Nakajima*** nel 1930 intuisce il **legame** fra l'**algebra booleana** (la teoria del vero/falso) e la **logica dei circuiti elettronici**: 
 nascono i primi circuiti elettronici in grado di risolvere operazioni logiche e quindi si apre l'era dei calcolatori elettronici.
 
 Nel 1924 nasce IBM, la prima azienda a fare dell'informatica il suo *core business*, che darà una forte spinta alla progettazione di hardware "in miniatura" 
@@ -127,88 +127,141 @@ l'esecuzione degli algoritmi! Ecco l'idea su cui si basa l'implementazione delle
 
 **UNIX, il primo sistema operativo (1960-1975)**
 
-<img style="width: 50%" alt="Kevin Thompson e Dennis Ritchie" src="../images/ritchie_thompson.jpg">
 
-
-Negli anni '60 le aziende che più di tutte utilizzavano
-l'informatica erano le aziende telefoniche, in particolare il colosso
-americano AT&T. Nei suoi laboratori di ricerca, i ***Bell
-Laboratories***, succedono le cose più interessanti per la storia
+Negli anni '60 le aziende che più di tutte utilizzavano l'informatica erano le aziende telefoniche, 
+in particolare il colosso americano AT&T. 
+Nei suoi laboratori di ricerca, i ***Bell Laboratories***, succedono le cose più interessanti per la storia
 informatica del periodo.
 
-Lì, ***Kevin Thompson*** progetta il sistema operativo UNIX, che dovrà
-gestire tutto il traffico telefonico dei centralini d'America.
+<img style="width: 50%; float:right; margin-left: 10px" alt="Kevin Thompson e Dennis Ritchie" src="../images/ritchie_thompson.jpg">
 
-In quegli stessi laboratori il suo collega ***Dennis Ritchie*** sviluppa
-il ***linguaggio C*** (terzo tentativo dopo i linguaggi... capito no?),
+Lì, ***Kevin Thompson*** progetta il sistema operativo UNIX, che dovrà gestire tutto il traffico telefonico dei centralini d'America.
+
+In quegli stessi laboratori il suo collega ***Dennis Ritchie*** sviluppa il ***linguaggio C*** (terzo tentativo dopo i linguaggi... capito no?),
 un linguaggio procedurale altamente performante.
 
-Quando i due iniziano a collaborare, UNIX viene completamente riscritto
-in linguaggio C, diventando un sistema operativo multiutente e
-multiprocesso, con supporto al networking e quindi allo scambio di
-informazioni fra 2 sistemi UNIX.
+Quando i due iniziano a collaborare, UNIX viene completamente riscritto in linguaggio C, diventando un sistema operativo multiutente e
+multiprocesso, con supporto al networking e quindi allo scambio di informazioni fra 2 sistemi UNIX.
+
+In quel periodo le aziende non avevano ancora chiaro come il software potesse essere una proprietà intellettuale molto rilevante: AT&T distribuisce
+gratuitamente il codice del sistema operativo di loro proprietà alle università per permettere loro di studiarlo ed eventualmente migliorarlo!
+
+
+!!! tip "UNIX oggi!"
+
+    UNIX è l'antenato di tutti i sistemi operativi moderni (Linux, Android, MacOS, iOS, BSD: praticamente tutti tranne Windows). 
+    
+    I componenti fondamentali di tutti questi sistemi operativi sono ancora scritti in linguaggio C!!!
+
+
+Nasce l'informatica moderna!!!
+
+<br>
+
+**BSD e i suoi derivati (1977 in avanti)**
+
+
+La versione di UNIX rivisitata, rielaborata e modificata dai docenti e studenti dell'università di Berkeley della California del Sud viene nominata BSD (Berkeley Software Distribution).
+
+Il sistema operativo BSD non è più utilizzato e sviluppato, ma da esso è
+partita una famiglia di sistemi operativi liberi molto diffusi,
+soprattutto in ambito mainframe e network management, fra cui vale la
+pena ricordare:
+
+- [FreeBSD](https://www.freebsd.org/), su cui si basa il
+  firewall/proxy del liceo
+- [FreeNAS](http://www.freenas.org/), utilizzato su dispositivi di
+  archiviazione di rete
+- [DarwinOS](http://www.puredarwin.org/), sistema libero sovvenzionato
+  da Apple, su cui si basa Mac OS
+- [Orbis OS](https://www.playstation.com/en-gb/get-help/ps4-system-software/),
+  il sistema operativo della PlayStation
+
+Valeva la pena citarli, vero??
+
+!!! note "PS"
+    
+    L'ho detto che anche il servizio [Netflix](https://openconnect.netflix.com/en/appliances/#software) si basa su FreeBSD? 
+    
+    E che lo stesso vale anche per i server [Whatsapp](https://freebsdfoundation.org/testimonial/whatsapp/)?
 
 
 <br>
 
-**BSD e i suoi derivati (19xx in avanti)**
-
-
-UNIX è l'antenato di tutti i sistemi operativi moderni (Linux, Android,
-MacOS, iOS, BSD: praticamente tutti tranne Windows), il cui corpo
-centrale viene ancora oggi scritto in linguaggio C...
-
-
-<br>
 
 **Apple (1976 in avanti)**
 
 
-Nel 1976 nasce Andrea Diamantini.
+Nel 1976 ***Steve Jobs***, Steve Wozniak e Ronald Wayne fondano la ***Apple Computers***, azienda produttrice di hardware prima e
+successivamente di hardware e software.
 
 <img style="width: 50%" alt="Apple Founders" src="../images/apple_guys.jpg">
 
-In quello stesso anno ***Steve Jobs***, Steve Wozniak e
-Ronald Wayne fondano la ***Apple Computers***.
-
-Nel garage di casa Jobs, questa "startup" inizia la sua guerra
-personale contro il colosso del tempo: la IBM, iniziando su piccolissima
-scala la produzione di computer destinati agli hobbisti e non più ad
+Nel garage di casa Jobs, questa "startup" inizia la sua guerra personale contro il colosso del tempo: la IBM, 
+iniziando su piccolissima scala la produzione di computer destinati agli hobbisti e non più ad
 aziende e lavoratori.
+
+I prodotti del primo periodo sono basati su processori `PowerPC` e su un sistema operativo proprietario scritto da zero all'interno dell'azienda: il `Macintosh`.
+
+Dopo la prima grande crisi con Steve Jobs e al suo reintegro circa un anno dopo, nascono i prodotti del secondo periodo, basati su processori `Intel` e un sistema operativo
+proprietario basato però su `Darwin OS`: il sistema `Mac OS X`.
+
+Dopo la seconda grande crisi e l'ennesimo reintegro di Jobs, parte il progetto `iPhone`: Apple produce il primo smartphone al mondo, basato su sistema operativo `iOS`, anch'esso
+derivato da `Darwin OS`.
 
 <br>
 
 **Microsoft (1975 in avanti)**
 
 
-***Microsoft*** è stata fondata da ***Bill Gates*** e ***Paul Allen***. 
-Pur con un anno di anticipo
-rispetto alla Apple, questa azienda che si focalizza unicamente sulla
-produzione di software ha bisogno di più di 10 anni di lavoro per
-affermarsi al grande pubblico e dell'impulso al mercato che la Apple
-introduce, ma che Microsoft sfrutta al meglio.
+***Microsoft*** è stata fondata da ***Bill Gates*** e ***Paul Allen***. Ben presto si unirà a loro l'amico ***Steve Ballmer*** a formare il trio che renderà la Microsoft 
+un'azienda leader a livello mondiale nel settore dell'Informatica.
 
 <img style="width: 50%;" alt="Microsoft" src="../images/microsoft_guys.jpg">
 
-Queste aziende e i loro leader carismatici caratterizzeranno la storia
-dell'informatica (e non solo) degli anni a venire. Il loro successo sta
-nel fatto di essere riusciti a portare l'informatica nelle case di tutte
-le persone!
+Al contrario di Apple, Microsoft produce unicamente software, dapprima programmi specializzati per i fogli di calcolo e per la programmazione in BASIC, poi un sistema operativo
+completo e una suite da ufficio.
 
-P[]{#anchor-1}rima di Steve Jobs e Bill Gates l'informatica era una
-scienza settoriale a cui si dedicavano solo aziende specializzate. Con
-la loro discesa in campo l'informatica diventa uno strumento alla
-portata di tutti.
+All'inizio degli anni '80, il primo mattone che farà le fortune di Microsoft: acquista un sistema operativo di base da una piccola società di Seattle, lo migliora un pò e con esso
+stringe un accordo di fornitura con IBM, per distribuirlo su tutti i loro computer.
+
+Anni dopo la mossa che cambia per sempre le sorti dell'azienda e la storia (dell'informatica): esce il nuovo sistema operativo `Windows` con supporto per la grafica e il mouse.
+
+Nel frattempo un altro dei progetti Microsoft ha fortuna: la suite da ufficio `Microsoft Office`, che diventerà il loro secondo progetto di punta.
+
+
+!!! tip "Gates e Jobs"
+
+    Apple e Microsoft e i loro leader carismatici caratterizzeranno la storia dell'informatica (e non solo) degli anni a venire. 
+    Il loro successo sta nel fatto di essere riusciti a portare l'informatica nelle case di tutte le persone!
+
+    Prima di Steve Jobs e Bill Gates l'informatica era una scienza settoriale a cui si dedicavano solo aziende specializzate. 
+    Con la loro discesa in campo l'informatica diventa uno strumento alla portata di tutti.
 
 <br>
 
-**GNU/Linux (1991 in avanti)**
+
+**GNU, Linux (1991 in avanti) e Android**
 
 
-Nel 1991 lo studente finlandese ***Linus Torvalds*** progetta il kernel per il sistema operativo libero e aperto
-[***GNU/LINUX***](https://it.wikipedia.org/wiki/Linux).
+Il problema del sistema operativo UNIX era il fatto di essere un sistema operativo proprietario: poteva essere studiato in ambito universitario,
+ma non utilizzato in qualunque ambito all'esterno della AT&T.
 
-<img style="width: 50%;" alt="Linus Torvalds" src="../images/linus_torvalds.jpg">
+Nel 1984 ***Richard Stallman***, promotore della [`Free Software Foundation`](https://it.wikipedia.org/wiki/Free_Software_Foundation), avvia il `Progetto GNU`
+per riscrivere tutte le parti di UNIX allo scopo di ottenere un sistema operativo completo e libero, utilizzabile da chiunque.
+
+!!! tip "L'acronimo GNU"
+
+    GNU è un acronimo ricorsivo, che significa G.N.U. = **G**NU is **N**ot **U**nix.
+    
+    Umorismo informatico :smile:
+
+
+Nel 1991 lo studente finlandese ***Linus Torvalds*** *completa* il progetto GNU progettando il kernel, denominato `Linux` per il sistema operativo libero e aperto
+che verrà chiamato appunto [***GNU/LINUX***](https://it.wikipedia.org/wiki/Linux).
+
+
+<img style="width: 50%;" alt="Richard Stallman e Linus Torvalds" src="../images/torvalds_stallman.jpg">
 
 
 Il suo progetto sarà talmente innovativo che diventerà il kernel di sistemi che vanno dal piccolo smartphone 
@@ -244,11 +297,15 @@ Windows 95 con incluso il browser Internet Explorer. In questo modo gli
 utenti Windows sono "guidati" ad usare Il browser Microsoft invece che
 installare Netscape, che perde importanti quote di mercato. Undici anni
 dopo Microsoft perderà il processo per concorrenza sleale, quando ormai
-Netscape era fallita... era iniziata la [***guerra dei
-browser***](https://it.wikipedia.org/wiki/Guerra_dei_browser)!
+Netscape era fallita... era iniziata la [***guerra dei browser***](https://it.wikipedia.org/wiki/Guerra_dei_browser)!
 
 L'egemonia di Internet Explorer sarà spezzata anni dopo dal browser Mozilla Firefox.
 
+E adesso? Saremo forse in una nuova egemonia??
+
+<br>
 
 Nel 2017 ho iniziato a scrivere queste righe per voi. Spero vi siano piaciute.
+
+<br>
 
