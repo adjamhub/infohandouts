@@ -294,7 +294,7 @@ in questo modo gli utenti Windows sono "guidati" ad usare Il browser Microsoft i
 Undici anni dopo Microsoft perderà il processo per concorrenza sleale, quando ormai Netscape era fallita... 
 era iniziata la [***guerra dei browser***](https://it.wikipedia.org/wiki/Guerra_dei_browser)!
 
-L'egemonia di Internet Explorer sarà spezzata anni dopo dal browser Mozilla Firefox.
+L'egemonia di Internet Explorer sarà spezzata anni dopo dal browser `Mozilla Firefox`.
 
 E adesso? Siamo forse in una nuova egemonia??
 

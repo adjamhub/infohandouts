@@ -75,7 +75,7 @@ nav:
   - Basics:
     - Introduzione: basics/00_intro.md
     - Storia: basics/01_storia.md
-    - Informazioni Binarie: basics/05_info_binarie.md
+    - Rappresentare le Informazioni: basics/05_info_binarie.md
   - Hardware & Software:
     - Introduzione: hwsw/00_intro.md
     - Hardware: hwsw/10_hw.md

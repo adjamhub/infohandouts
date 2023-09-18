@@ -1,10 +1,10 @@
-﻿# Informazioni binarie
+﻿# Rappresentazione delle Informazioni
 
 blah blah
 
 
-
-## Il sistema di numerazione binario
+<!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+## Il sistema binario
 
 
 
@@ -118,8 +118,8 @@ Convertire in decimale i seguenti numeri binari:
 
 
 
-
-## Sistema di numerazione esadecimale
+<!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+## Il sistema esadecimale
 
 
 Il sistema di numerazione esadecimale (a base 16) viene molto utilizzato in informatica per la sua relazione diretta fra una cifra decimale e quattro cifre binarie. Questa deriva direttamente dal fatto che 16 è una potenza di 2 (24 = 16).Viene dunque spesso utilizzato come “intermediario”, cioè come strumento di rappresentazione dei numeri binari quando questi sono troppo lunghi.
@@ -193,7 +193,10 @@ Convertire i seguenti numeri in binario e rappresentarli secondo la notazione es
 Calcolare il numero binario e il numero decimale corrispondente al seguente numero esadecimale:
 
 0x0123, 0xAD45, 0x98A1, 0x1824, 0x8FFF, 0xFFFF, 0x0001, 0x9999
-1. # **Rappresentazione delle informazioni**
+
+
+<!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+## **Rappresentazioni binarie**
 
 
 Nella prossima disamina andremo a vedere le applicazioni principali dei sistemi di numerazione binario ed esadecimale in informatica.
@@ -204,8 +207,6 @@ Di seguito alcune spiegazioni su come sono convertiti in binario alcuni tipi di 
 
 Cominciamo!
 
-
-## Rappresentazioni binarie 
 
 
 ### I Numeri interi
@@ -298,7 +299,9 @@ In generale, per definire un set di caratteri occorre:
 - una corrispondenza fra questi.
 
 
-#### Codifica US ASCII
+<br>
+
+**Codifica US ASCII**
 
 La codifica US ASCII (***American Standard Code for  Information Interchange***) è il primo set di caratteri congegnato che ha avuto diffusione internazionale.
 
@@ -311,8 +314,9 @@ La codifica ASCII utilizza quindi una corrispondenza biunivoca carattere-codice,
 - Gli elementi da 128 a 255 fanno parte del cosiddetto ***set esteso di caratteri***.
 
 
-#### Standard ISO 8859
+<br>
 
+**Standard ISO 8859**
 
 Osservando meglio la tabella ASCII ci si accorge della carenza di molti caratteri in uso nelle lingue più comuni; citando solo l'italiano, mancano ad esempio tutte le lettere accentate. Di fatto solo per inglese, latino e swahili sono sufficienti i 128 caratteri di base e per colmare questa mancanza si utilizzano codici a 8 bit in cui anche il bit più significativo cambia valore.
 
@@ -333,8 +337,9 @@ Vediamo un elenco degli standard ISO 8859 più famosi e utilizzati in qualche pa
 Questo significa che ognuno di queste codifiche ha gli stessi caratteri nei primi 128 posti (numeri binari a 8 bit con cifra più significativa uguale a zero), mentre rappresentano caratteri diversi
 
 
-#### Codifica UNICODE
+<br>
 
+**Codifica UNICODE**
 
 La codifica ISO 646 a 8 bit non è adatta per le lingue orientali che usano migliaia di ideogrammi ciascuno dei quali corrisponde non ad una lettera, ma ad un intero concetto.
 
@@ -350,7 +355,9 @@ Tuttavia però due serie di motivi hanno portato Unicode a non affermarsi quale 
 - ***Spreco di spazio***. Poiché ogni carattere sarebbe passato da dimensione 1 a 2 byte, tutti i file sarebbero automaticamente aumentati, a volte raddoppiati di dimensione, molto spesso senza alcuna necessità.
 
 
-#### Codifica UTF-8
+<br>
+
+**Codifica UTF-8**
 
 UTF-8 è una codifica dei caratteri UNICODE in sequenze di lunghezza variabile di byte (da 1 a 4). Questo significa che tramite UTF-8 è possibile rappresentare tutti i caratteri esistenti per tutte le lingue conosciute esattamente come con UNICODE, ma mentre quello prevede una lunghezza fissa dei caratteri a 2 bytes, con UTF-8 la codifica varia da 1 a 4 bytes (4 sole possibili alternative; niente pezzi di byte).
 
@@ -359,7 +366,7 @@ Per esempio un solo byte è necessario per rappresentare i primi 128 caratteri A
 L'organismo **IETF** (Internet Engineering Task Force), la comunità di tecnici e specialisti che si occupa dello sviluppo e della promozione delle tecnologie del web, richiede che tutti i protocolli internet identifichino la codifica di caratteri che utilizzano e che siano compatibili almeno con UTF-8.
 
 
-
+<!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 ## Formati dei file
 
 
@@ -411,7 +418,7 @@ La struttura del file è molto semplice, perché è possibile suddividerla in tr
 3. **mappa dei pixel** (altezza x larghezza x profondità del colore) la struttura che identifica l'immagine.
 
 
-
+<!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 ## Gestione dei colori
 
 Si rappresentano in informatica in 2 modalità:
