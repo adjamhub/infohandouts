@@ -38,7 +38,7 @@ Allo stesso modo si continua con le centinaia, che sono formate da 10 decine e c
 
       =     5 x 100     +    8 x 10    +     2x1
 
-      =     5 x 10^2    +   8 x 10^1   +   2 x 10^0
+      =     5 x 10<sup>2</sup>    +   8 x 10<sup>1</sup>   +   2 x 10<sup>0</sup>
 ```
 
 Notiamo soprattutto l'ultima rappresentazione. In questo modo si può indicare ogni gruppo con un indice dato dalla potenza da assegnare alla base per ottenerne il peso. Infatti le unità sono il gruppo 0 (100 = 1), le decine sono il gruppo 1 (101 = 10), le centinaia il gruppo 2 (102 = 100) e così via praticamente all'infinito.
@@ -73,7 +73,7 @@ Vediamo i primi 10 numeri rappresentati nel sistema di numerazione binaria:
 Seguendo l'esempio precedente potremo stabilire una rappresentazione dei valori indicati in un numero binario:
 
 ```
-1001  =  1 x 2^3  +  0 x 2^2  +  0 x 2^1  +  1 x 2^0  =
+1001  =  1 x 2<sup>3</sup>  +  0 x 2<sup>2</sup>  +  0 x 2<sup>1</sup>  +  1 x 2<sup>0</sup>  =
 
       =   1 x 8   +   0 x 4   +   0 x 2   +   1 x 1   =
 
@@ -85,7 +85,7 @@ In questo modo dato un qualsiasi numero binario (una sequenza di zeri e uni), po
 Quale valore rappresenta il numero binario 101011?
 
 ```
-101011  =  1 x 2^5  +  0 x 2^4  +  1 x 2^3  +  0 x 2^2  +  1 x 2^1  +  1 x 2^0  =
+101011  =  1 x 2<sup>5</sup>  +  0 x 2<sup>4</sup>  +  1 x 2<sup>3</sup>  +  0 x 2<sup>2</sup>  +  1 x 2<sup>1</sup>  +  1 x 2<sup>0</sup>  =
 
         =   1 x 32  +   0 x 16  +   1 x 8   +   0 x 4   +   1 x 2   +  1 x 1  =
 
@@ -269,7 +269,8 @@ Vediamo di mettere bene in evidenza le differenze fra ciò che in matematica sia
     Per semplificare calcoli e ragionamenti, gli esempi sottostanti sono sviluppati con parole di 16 bit invece di 64!!!
     
     I concetti si capiscono ugualmente... ma i calcoli sono molto più semplici (e le sequenze di zeri e/o di uni hanno un termine!)
-    
+ 
+
 Per la rappresentazione dei numeri interi, occorre distinguere fra numeri positivi e negativi. 
 
 Il caso dei numeri positivi è molto semplice, dato un numero, ad esempio `35`, bisognerà prima di tutto verificare se appartiene al range dei numeri rappresentabili 
@@ -344,7 +345,7 @@ Vediamo il procedimento di trasformazione di un numero reale nella sua rappresen
 2. Il numero binario così ottenuto viene trasformato in notazione esponenziale normalizzata, cioè nella forma:
 
 ```
-±M x 2^E
+±M x 2<sup>E</sup>
 
 dove 1.0 ≤ M ≤ 2.0
 ```
@@ -384,9 +385,12 @@ In generale, per definire un set di caratteri occorre:
 
 **Codifica US ASCII**
 
+<img style="width: 40%; float:right; margin-left: 10px" alt="ASCII Table" src="../images/ASCII_table.jpg">
+
+
 La codifica US ASCII (***American Standard Code for  Information Interchange***) è il primo set di caratteri congegnato che ha avuto diffusione internazionale.
 
-Nella sua versione estesa, essa rappresenta un set di 256 caratteri utilizzando numeri binari a 8 cifre. Infatti con 8 cifre binarie si possono rappresentare 2^8 = 256 numeri diversi.
+Nella sua versione estesa, essa rappresenta un set di 256 caratteri utilizzando numeri binari a 8 cifre. Infatti con 8 cifre binarie si possono rappresentare 2<sup>8<sup> = 256 numeri diversi.
 
 La codifica ASCII utilizza quindi una corrispondenza biunivoca carattere-codice, ove:
 
@@ -501,6 +505,10 @@ La struttura del file è molto semplice, perché è possibile suddividerla in tr
 
 <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 ## Gestione dei colori
+
+
+<img style="width: 50%; float:right; margin-left: 10px" alt="ASCII Table" src="../images/colori.jpg">
+
 
 Si rappresentano in informatica in 2 modalità:
 
