@@ -6,7 +6,7 @@ sarà facile dedurre come i primi strumenti informatici (gli "antenati"
 dei computer) non siano altro che calcolatori...
 
 
-## Gli *antenati* dei Computer
+## Gli *antenati* dei computer
 
 
 **L'abaco (1200 A.C)**
@@ -20,7 +20,7 @@ E alle elementari...
 
 <br>
 
-**Calcolatori meccanici (1600-1800)**
+**I calcolatori meccanici (1600-1800)**
 
 
 ***La Pascalina*** è il nome della prima calcolatrice meccanica, che deve il nome al suo inventore, il matematica, fisico e filosofo francese ***Blaise Pascal***, 
@@ -59,8 +59,9 @@ digitali.
     
     In suo onore nel 1979 è stato inventato il linguaggio di programmazione ADA!
 
+<br>
 
-**I primi calcolatori elettronici (ventesimo secolo)**
+**I calcolatori elettronici (ventesimo secolo)**
 
 L'ingegnere giapponese ***Akira Nakajima*** nel 1930 intuisce il **legame** fra l'**algebra booleana** (la teoria del vero/falso) e la **logica dei circuiti elettronici**: 
 nascono i primi circuiti elettronici in grado di risolvere operazioni logiche e quindi si apre l'era dei calcolatori elettronici.
@@ -276,32 +277,26 @@ Sì... tutti i 500 computer più potenti del mondo funzionano con kernel Linux.
 ## L'era di Internet
 
 
-A metà degli anni 70 Il dipartimento della difesa americano commissiona
-ai laboratori Bell, dove Thompson e Ritchie lavoravano, la creazione di
-una rete di collegamento fra i centri strategici militari in grado di
-scambiare velocemente informazioni anche in caso di attacco armato:
-nasce la rete ***ARPAnet***, l'antenata di Internet.
+A metà degli anni '70 Il dipartimento della difesa americano commissiona ai laboratori Bell, 
+dove Thompson e Ritchie lavoravano, la creazione di una rete di collegamento fra i centri strategici militari 
+in grado di scambiare velocemente informazioni anche in caso di attacco armato:
+nasce la rete `ARPAnet`, l'antenata di Internet.
 
-Negli anni ottanta negli Stati Uniti si termina lo sviluppo della rete
-ARPANET, pubblicando le specifiche della suite di protocolli **TCP/IP**,
+Negli anni ottanta negli Stati Uniti si termina lo sviluppo della rete *ARPANET*, pubblicando le specifiche della suite di protocolli `TCP/IP`,
 che segnano l'inizio dell'era di Internet.
 
-Nel 1989, al CERN di Ginevra, il fisico ***Tim Berners Lee*** inventa
-uno strumento per diffondere in tempo reale informazioni e articoli
-scientifici: nasce il **World Wide Web**, basato sul protocollo HTTP, lo
-schema URL e il linguaggio HTML.
+Nel 1989, al CERN di Ginevra, il fisico ***Tim Berners Lee*** inventa uno strumento per diffondere in tempo reale informazioni e articoli
+scientifici: nasce il `World Wide Web`, basato sul protocollo `HTTP`, lo schema `URL` e il linguaggio `HTML`.
 
-Nel 1994 esce il primo browser a diffusione mondiale: Netscape
-Navigator. L'anno dopo Microsoft risponde con il sistema operativo
-Windows 95 con incluso il browser Internet Explorer. In questo modo gli
-utenti Windows sono "guidati" ad usare Il browser Microsoft invece che
-installare Netscape, che perde importanti quote di mercato. Undici anni
-dopo Microsoft perderà il processo per concorrenza sleale, quando ormai
-Netscape era fallita... era iniziata la [***guerra dei browser***](https://it.wikipedia.org/wiki/Guerra_dei_browser)!
+Nel 1994 esce il primo browser a diffusione mondiale: `Netscape Navigator`. 
+L'anno dopo Microsoft risponde con il sistema operativo Windows 95 con incluso il browser `Internet Explorer`: 
+in questo modo gli utenti Windows sono "guidati" ad usare Il browser Microsoft invece che installare Netscape, che perde importanti quote di mercato.<br> 
+Undici anni dopo Microsoft perderà il processo per concorrenza sleale, quando ormai Netscape era fallita... 
+era iniziata la [***guerra dei browser***](https://it.wikipedia.org/wiki/Guerra_dei_browser)!
 
 L'egemonia di Internet Explorer sarà spezzata anni dopo dal browser Mozilla Firefox.
 
-E adesso? Saremo forse in una nuova egemonia??
+E adesso? Siamo forse in una nuova egemonia??
 
 <br>
 
