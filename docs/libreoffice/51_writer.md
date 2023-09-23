@@ -11,7 +11,7 @@ differenziata dello stesso, come di inserire immagini, link e altri
 contenuti per arricchire il documento stesso.
 
 Esempi di editor di documenti sono i comunissimi Microsoft Word e
-LibreOffice Writer. Noi qui (lo avrete capito) approcciamo un po\'
+LibreOffice Writer. Noi qui (lo avrete capito) approcciamo un po'
 l'editor LibreOffice Writer.
 
 
@@ -47,7 +47,7 @@ Basta provare ;)
 
 
 
-## Stili
+## Stili per il testo
 
 
 Questo capitolo è il più complicato da spiegare di tutto il corso su
@@ -60,10 +60,9 @@ Se vuoi scrivere un titolo bello grosso, come quello **Stili** su in
 alto, basta modificarne il font (il tipo di carattere), la dimensione e
 metterlo grassetto, giusto?!
 
-No!
+**No!**
 
-Per diventare un titolo bisogna modificarne lo stile! Guardate la figura
-sotto (è orribile, lo so).
+Per diventare un titolo bisogna modificarne lo stile! Guardate la figura sotto (è orribile, lo so).
 
 
 ![stili](stili.jpg)
@@ -78,15 +77,13 @@ disponibili. Così i paragrafi che compongono un capitolo devono essere
 tutti di stile "Corpo del testo" oppure uno stile derivato da questi.
 
 
+!!! note "Il menù per gli stili"
 
-### Gestire gli stili
+    A un certo punto In Writer è comparso addirittura un **menù dedicato agli stili**
+    per permettere agli utenti di gestire al meglio questo importantissimo
+    aspetto della formattazione dei documenti.
 
-
-In LibreOffice 6.x è comparso addirittura un menù dedicato agli stili
-per permettere agli utenti di gestire al meglio questo importantissimo
-aspetto della formattazione dei documenti.
-
-Esagerando un po\', si potrebbe dire che, deciso *quello che si vuole
+Esagerando un po', si potrebbe dire che, deciso *quello che si vuole
 scrivere*, prima di scriverlo nel documento, bisognerebbe *decidere come
 scriverlo*, creando e modificando degli stili adatti al layout che
 vogliamo creare. Infine si passa alla digitazione vera e propria del
@@ -99,10 +96,6 @@ stesura di qualsiasi documento non banale.
 
 Come si crea uno stile, si modifica e si applica ad un documento lo
 vediamo a lezione.
-
-
-
-### Stili per Carattere, Paragrafo, Pagina
 
 
 Gli stili si applicano ad un contesto. E i contesti in un editor di
@@ -167,19 +160,8 @@ non alla pagina corrente, ma ***a tutte le pagine del documento***!
 
 
 
-## Caratteristiche aggiuntive
+## Intestazioni e piè di pagina
 
-
-Esistono una serie di opzioni aggiuntive che possono essere inserite in
-un documento Writer per abbellirne l'aspetto o modificarne il
-comportamento. Vediamo le opzioni più importanti:
-
-
-
-### Intestazioni e piè di pagina
-
-
-![Intestazioni e piè di pagina](header_footer.jpg)
 
 !!! tip "In Inglese"
     L'intestazione di pagina si chiama ***header***,
@@ -187,30 +169,34 @@ comportamento. Vediamo le opzioni più importanti:
     Continuando l'analogia, il corpo della pagina viene chiamato ***body***
   
 
+![Intestazioni e piè di pagina](header_footer.jpg){style="float:left;margin-right:20px"}
+
 L'intestazione e il piè di pagina sono due aree *separate* del foglio che
 si trovano rispettivamente sopra e sotto il corpo centrale della pagina.
 
 Queste due aree appartengono allo stile della pagina e saranno quindi
 ripetute costantemente in tutte le pagine del documento.
 
-Per inserirle in un documento, selezionare, dal menù INSERISCI, la voce
-INTESTAZIONE E PIE' DI PAGINA; poi cliccare dentro ognuna di esse per
+Per inserirle in un documento, seleziona, dal menù `INSERISCI`, la voce
+`INTESTAZIONE E PIE' DI PAGINA`; poi cliccare dentro ognuna di esse per
 inserire informazioni che saranno ripetute in tutto il documento.
 
-Per inserire informazioni conosciute (es: titolo del documento, autore,
-titolo del capitolo, etc...) oppure informazioni da calcolare (data di
-ultima modifica, numero della pagina, totale delle pagine, etc...) sarà
-interessante utilizzare un comando di campo.
+Queste zone particolari di ogni pagina sono solitamente costellate di 
+informazioni generiche be definite (ad esempio: il titolo del documento, l'autore,
+il titolo del capitolo, etc...) oppure informazioni che vengono calcolate in tempo reale 
+(ad esempio: la data di ultima modifica, il numero della pagina, il totale delle pagine, etc...).
+
+Come si gestiscono tutte queste informazioni automatiche è oggetto del prossimo argmento.
 
 
-### Comandi di campo
+## Comandi di campo
 
 
 Un comando di campo è una istruzione che impone a Writer di desumere
 un'informazione dal documento stesso e di visualizzarla nel punto ove il
 comando viene applicato. Per inserirla nel documento (di solito si usano
 nelle intestazioni e nei piè di pagina) selezionare il punto prescelto,
-poi dal menù INSERISCI selezionare COMANDO DI CAMPO.
+poi dal menù `INSERISCI` selezionare `COMANDO DI CAMPO`.
 
 Sono disponibili i seguenti comandi di campo:
 
@@ -223,44 +209,47 @@ Sono disponibili i seguenti comandi di campo:
 - Oggetto
 
 
-### Indice Generale e Indice Analitico
+
+## Indice Generale e Indice Analitico
 
 
-Un indice generale è un elenco di tutti i titoli presenti nel nostro
+Un **indice generale** è un elenco di tutti i titoli presenti nel nostro
 documento, in ordine di apparizione e con il numero di pagina vicino.
 Writer crea l'indice inserendo un collegamento in ognuno dei titoli, in
 modo tale che "cliccandoci" si possa raggiungere il capitolo
 corrispondente.
 
-Un indice analitico e un elenco strutturato e ordinato di tutti i
+Un **indice analitico** è un elenco strutturato e ordinato di tutti i
 capitoli e gli oggetti (immagini, tabelle, note, etc...) presenti nel
 documento.
 
-Una bibliografia è un elenco di testi, solitamente con un riferimento o
+Una **bibliografia** è un elenco di testi, solitamente con un riferimento o
 un link per ognuno, ordinato secondo la volontà dell'autore. Solitamente
 la bibliografia di un documento contiene tutte le sue fonti.
 
-Nella nostra trattazione ci occuperemo semplicemente dell'indice
-generale. Per inserirlo nel nostro documento, dal menù INSERISCI, aprire
-il sottomenù INDICE GENERALE E INDICE ANALITICO, poi selezionare la voce
-INDICE GENERALE, ANALITICO O BIBLIOGRAFIA.
+> Nella nostra trattazione ci occuperemo semplicemente dell'indice generale. 
 
-Dall'interfaccia che appare, selezionare "Indice Generale" e premere
-invio. L'indice generale viene creato automaticamente nella posizione
-selezionata controllando tutti i titoli presenti nel proprio documento,
-ma attenzione!!! Se modificate il documento, aggiungendo pagine, titoli
-e quant'altro, va aggiornato con un click, tasto destro e azione
-AGGIORNA.
+Per inserire un indice generale nel nostro documento, dal menù `INSERISCI`, aprire
+il sottomenù `INDICE GENERALE E INDICE ANALITICO`, poi selezionare la voce
+`INDICE GENERALE, ANALITICO O BIBLIOGRAFIA`.
 
-**Ricordatelo!!!**
+Dall'interfaccia che appare, selezionare "Indice Generale" e premere invio. 
+L'indice generale viene creato automaticamente nella posizione selezionata controllando tutti i titoli presenti nel proprio documento.
+
+!!! warning "Attenzione!"
+
+    Dopo aver creato l'indice generale, questo non si aggiorna automaticamente!!
+    
+    Dopo aver aggiunto pagine, titoli e/o contenuti devi ritornare sull'indice generale,
+    cliccare col tasto destro su di esso e dal menù contestuale selezionare `AGGIORNA`!
+
+    **Ricordatelo!**
 
 Se modifichiamo gli stili dei titoli questi non saranno inseriti
 automaticamente nell'indice, ma dovranno essere inseriti
 dall'interfaccia grafica selezionandone il nome ed indicando il livello
 
-
 ![indice generale o analitico](indice.jpg)
-
 
 Dalla finestra di inserimento indice, mettete la spunta su "stili
 aggiuntivi", poi dal pulsante "Assegna Stili" andate ad indicare il
@@ -324,35 +313,12 @@ IMMAGINE, da qui selezionare il file e premere invio.
 Per permettere all'immagine di posizionarsi correttamente secondo il
 nostro volere bisogna considerare alcune cose:
 
-| Proprietà                  | Descrizione                            |
-|----------------------------|----------------------------------------|
-| Ancoraggio                 | Stabilisce come l'immagine è legata al testo. Può essere ancorata:            |
-|                            |                                        |
-| Scorrimento                | Stabilisce in quale modo il testo      |
-|                            | debba scorrere sull'immagine e se esso |
-|                            | possa attraversarla. Opzioni           |
-|                            | possibili:                             |
-| Allineamento               | Stabilisce l'allineamento              |
-|                            | dell'immagine rispetto all'ancoraggio. |
-|                            | Opzioni possibili.                     |
-|                            |                                        |
-|                            | Allineamento orizzontale: **a destra,  |
-|                            | al centro, a sinistra**                |
-|                            |                                        |
-|                            | Allineamento verticale: **in alto, al  |
-|                            | centro, in basso**                     |
-| Bordi e distanza dal testo | Sono parametri che si possono          |
-|                            | modificare dalle proprietà             |
-|                            | dell'immagine.                         |
-|                            |                                        |
-|                            | Stabiliscono appunto se e come         |
-|                            | l'immagine deve avere un bordo e a     |
-|                            | quale distanza deve essere il testo da |
-|                            | essa (margin).                         |
-|                            |                                        |
-|                            | Lavorando su questi due parametri si   |
-|                            | mette meglio in evidenza l'immagine e  |
-|                            | si rende più leggibile il testo.       |
+| Proprietà                  | Descrizione                                                                                   |
+|----------------------------|-----------------------------------------------------------------------------------------------|
+| Ancoraggio                 | Stabilisce come l'immagine è legata al testo.                                                 |
+| Scorrimento                | Stabilisce in quale modo il testo debba scorrere sull'immagine e se esso possa attraversarla. |
+| Allineamento               | Stabilisce l'allineamento dell'immagine rispetto all'ancoraggio.                              |
+| Bordi e distanza dal testo | Sono parametri che si possono modificare dalle proprietà dell'immagine.                       |
 
 
 
