@@ -9,11 +9,13 @@ di base più importanti!
 
 
 
-Il sistema di numerazione binario è un sistema numerico ***posizionale*** e ***in base 2***, cioè che utilizza solo 2 cifre, solitamente 0 e 1, per la rappresentazione di tutti i numeri.
+Il sistema di numerazione binario è un sistema numerico ***posizionale*** e ***in base 2***, cioè che utilizza solo 2 cifre, solitamente 0 e 1, 
+per la rappresentazione di tutti i numeri.
 
 Un sistema di numerazione posizionale è quello che da valore alle cifre di un numero a seconda della posizione che queste vi occupano.
 
-Ad esempio nel numero decimale 37 tutti sappiamo benissimo che nonostante la cifra 3 sia più piccola della cifra 7, questa valga di più perché occupa la posizione delle decine, mentre la cifra più grande vale meno perché occupa la posizione delle unità
+Ad esempio nel numero decimale 37 tutti sappiamo benissimo che nonostante la cifra 3 sia più piccola della cifra 7, questa valga di più perché occupa la posizione delle decine, 
+mentre la cifra più grande vale meno perché occupa la posizione delle unità
 
 ```
 37   =   3 x 10   +   7 x 1
@@ -23,7 +25,8 @@ Questo modo di ragionare e di scrivere i numeri deriva dal fatto che siamo abitu
 
 Nonostante ciò, altri modi di contare si sono sviluppati nella storia. Ad esempio le uova si contano a dozzine (per questo si vendono solitamente a gruppi di 6: due gruppi = una dozzina), i minuti e i secondi si contano a gruppi di sessanta, le ore a gruppi di 24 e così via.
 
-Nell'aritmetica decimale esistono 10 cifre diverse (da 0 a 9) e quando si deve indicare un numero più grande di 9, si comincia a raggruppare mettendo in evidenza “a gruppi di 10”. Ecco che
+Nell'aritmetica decimale esistono 10 cifre diverse (da 0 a 9) e quando si deve indicare un numero più grande di 9, si comincia a raggruppare mettendo in evidenza “a gruppi di 10”. 
+Ecco che
 
 ```
 37   =   3 decine   +   7 unità
@@ -38,10 +41,10 @@ Allo stesso modo si continua con le centinaia, che sono formate da 10 decine e c
 
       =     5 x 100     +    8 x 10    +     2x1
 
-      =     5 x 10<sup>2</sup>    +   8 x 10<sup>1</sup>   +   2 x 10<sup>0</sup>
+      =     5 x 10 alla 2    +   8 x 10 alla 1   +   2 x 10 alla 0
 ```
 
-Notiamo soprattutto l'ultima rappresentazione. In questo modo si può indicare ogni gruppo con un indice dato dalla potenza da assegnare alla base per ottenerne il peso. Infatti le unità sono il gruppo 0 (100 = 1), le decine sono il gruppo 1 (101 = 10), le centinaia il gruppo 2 (102 = 100) e così via praticamente all'infinito.
+Notiamo soprattutto l'ultima rappresentazione. In questo modo si può indicare ogni gruppo con un indice dato dalla potenza da assegnare alla base per ottenerne il peso. Infatti le unità sono il gruppo 0 (10<sup>0</sup> = 1), le decine sono il gruppo 1 (10<sup>1</sup> = 10), le centinaia il gruppo 2 (10<sup>2</sup> = 100) e così via praticamente all'infinito.
 
 Se lavoriamo in base 2 con solo 2 cifre, gli unici numeri facili da rappresentare saranno proprio 0 e 1, mentre per 2 dovremo già iniziare a raggruppare. Così ad esempio:
 
@@ -72,32 +75,37 @@ Vediamo i primi 10 numeri rappresentati nel sistema di numerazione binaria:
 
 Seguendo l'esempio precedente potremo stabilire una rappresentazione dei valori indicati in un numero binario:
 
-```
-1001  =  1 x 2<sup>3</sup>  +  0 x 2<sup>2</sup>  +  0 x 2<sup>1</sup>  +  1 x 2<sup>0</sup>  =
 
-      =   1 x 8   +   0 x 4   +   0 x 2   +   1 x 1   =
+> 1001  =<br>
+> <br>
+> =  1 x 2<sup>3</sup>  +  0 x 2<sup>2</sup>  +  0 x 2<sup>1</sup>  +  1 x 2<sup>0</sup>  = <br>
+> <br>
+> =   1 x 8   +   0 x 4   +   0 x 2   +   1 x 1   = <br>
+> <br>
+> =     8     +     0     +     0     +     1     =   9
 
-      =     8     +     0     +     0     +     1     =   9
-```
 
 In questo modo dato un qualsiasi numero binario (una sequenza di zeri e uni), potremo stabilire quale quantità esso rappresenti in decimale semplicemente applicando la metodologia appresa.
 
-Quale valore rappresenta il numero binario 101011?
+Quale valore rappresenta il numero binario `101011`?
 
-```
-101011  =  1 x 2<sup>5</sup>  +  0 x 2<sup>4</sup>  +  1 x 2<sup>3</sup>  +  0 x 2<sup>2</sup>  +  1 x 2<sup>1</sup>  +  1 x 2<sup>0</sup>  =
 
-        =   1 x 32  +   0 x 16  +   1 x 8   +   0 x 4   +   1 x 2   +  1 x 1  =
+> 101011 =<br>
+> <br>
+> =  1 x 2<sup>5</sup>  +  0 x 2<sup>4</sup>  +  1 x 2<sup>3</sup>  +  0 x 2<sup>2</sup>  +  1 x 2<sup>1</sup>  +  1 x 2<sup>0</sup>  = <br>
+> <br>
+> =   1 x 32  +   0 x 16  +   1 x 8   +   0 x 4   +   1 x 2   +  1 x 1  = <br>
+> <br>
+> =    32    +    0     +    8    +    0    +    2     +    1    = <br>
+> <br>
+> =   43
 
-        =    32    +    0     +    8    +    0    +    2     +    1    =
-
-        =   43
-```
 
 
 Al contrario se vogliamo capire qual è la rappresentazione binaria di un numero decimale dobbiamo utilizzare la tecnica delle divisioni (intere) successive.
 
-Ad esempio, dato il numero 35, la sua rappresentazione binaria si ottiene dividendo (con resto) successivamente il numero fino ad ottenere quoziente zero; alla fine si prende la fila dei resti ottenendo una sequenza di zeri e uni che sono il numero binario.
+Ad esempio, dato il numero 35, la sua rappresentazione binaria si ottiene dividendo (con resto) successivamente il numero fino ad ottenere quoziente zero; 
+alla fine si prende la fila dei resti ottenendo una sequenza di zeri e uni che sono il numero binario.
 
 ```
 35 / 2 = 17 con resto di 1
@@ -124,7 +132,7 @@ da cui si desume che
 ### Esercizi
 
 
-**Esercizio 1**
+**Esercizio 301**
 
 Convertire in binario i seguenti numeri decimali:
 
@@ -134,7 +142,7 @@ Convertire in binario i seguenti numeri decimali:
 
 <hr>
 
-**Esercizio 2**
+**Esercizio 302**
 
 Convertire in decimale i seguenti numeri binari:
 
@@ -147,7 +155,7 @@ Convertire in decimale i seguenti numeri binari:
 ## Il sistema esadecimale
 
 
-Il sistema di numerazione esadecimale (a base 16) viene molto utilizzato in informatica per la sua relazione diretta fra una cifra decimale e quattro cifre binarie. Questa deriva direttamente dal fatto che 16 è una potenza di 2 (24 = 16).Viene dunque spesso utilizzato come “intermediario”, cioè come strumento di rappresentazione dei numeri binari quando questi sono troppo lunghi.
+Il sistema di numerazione esadecimale (a base 16) viene molto utilizzato in informatica per la sua relazione diretta fra una cifra decimale e quattro cifre binarie. Questa deriva direttamente dal fatto che 16 è una potenza di 2 (2<sup>4</sup> = 16).Viene dunque spesso utilizzato come “intermediario”, cioè come strumento di rappresentazione dei numeri binari quando questi sono troppo lunghi.
 
 Essendo un sistema a 16 cifre si utilizzano nella sua rappresentazione anche le prime 6 lettere dell'alfabeto (`A`, `B`, `C`, `D`, `E`, `F`).
 
@@ -193,7 +201,7 @@ Da cui
 
 Analogamente se il nostro obiettivo è trasformare un numero binario in esadecimale basterà solo suddividere le sue cifre a gruppi di 4 e osservare la tabella.
 
-Ad esempio, il numero binario “11101” si può dividere nei due gruppi da 4 “0001” e “1101”: il gruppo più a sinistra si può solitamente rendere da 4 aggiungendo zeri a piacere.
+Ad esempio, il numero binario `11101` si può dividere nei due gruppi da 4 `0001` e `1101`: il gruppo più a sinistra si può solitamente rendere da 4 aggiungendo zeri a piacere.
 
 Da cui:
 
@@ -215,7 +223,7 @@ Ok… adesso facciamo qualche esercizio per assicurarci che tutti abbiano capito
 ### Esercizi
 
 
-**Esercizio 1**
+**Esercizio 311**
 
 Convertire i seguenti numeri in binario e rappresentarli secondo la notazione esadecimale:
 
@@ -225,7 +233,7 @@ Convertire i seguenti numeri in binario e rappresentarli secondo la notazione es
 
 <hr>
 
-**Esercizio 2**
+**Esercizio 312**
 
 Calcolare il numero binario e il numero decimale corrispondente al seguente numero esadecimale:
 
@@ -344,11 +352,11 @@ Vediamo il procedimento di trasformazione di un numero reale nella sua rappresen
 1. Il numero reale deve essere prima rappresentato in binario, convertendo opportunamente la parte intera e la parte frazionaria.
 2. Il numero binario così ottenuto viene trasformato in notazione esponenziale normalizzata, cioè nella forma:
 
-```
-±M x 2<sup>E</sup>
 
-dove 1.0 ≤ M ≤ 2.0
-```
+> ±M x 2<sup>E</sup> <br>
+> <br>
+> dove 1.0 ≤ M ≤ 2.0
+
 
 Usando la forma esponenziale normalizzata, per identificare un numero sono necessarie 3 informazioni:
 
@@ -390,7 +398,7 @@ In generale, per definire un set di caratteri occorre:
 
 La codifica US ASCII (***American Standard Code for  Information Interchange***) è il primo set di caratteri congegnato che ha avuto diffusione internazionale.
 
-Nella sua versione estesa, essa rappresenta un set di 256 caratteri utilizzando numeri binari a 8 cifre. Infatti con 8 cifre binarie si possono rappresentare 2<sup>8<sup> = 256 numeri diversi.
+Nella sua versione estesa, essa rappresenta un set di 256 caratteri utilizzando numeri binari a 8 cifre. Infatti con 8 cifre binarie si possono rappresentare 2<sup>8</sup> = 256 numeri diversi.
 
 La codifica ASCII utilizza quindi una corrispondenza biunivoca carattere-codice, ove:
 
