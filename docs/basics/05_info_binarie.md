@@ -459,6 +459,42 @@ Per esempio un solo byte è necessario per rappresentare i primi 128 caratteri A
 L'organismo **IETF** (Internet Engineering Task Force), la comunità di tecnici e specialisti che si occupa dello sviluppo e della promozione delle tecnologie del web, richiede che tutti i protocolli internet identifichino la codifica di caratteri che utilizzano e che siano compatibili almeno con UTF-8.
 
 
+### Esercizi
+
+
+**Esercizio 321 (interi)**
+
+Scrivere la rappresentazione esadecimale (a 16bit) dei seguenti numeri interi:
+
+```
+-25, +63, -139, +17, -48, +72
+```
+
+<hr>
+
+**Esercizio 322 (reali)**
+
+Scrivere la rappresentazione esadecimale (a 16bit) dei seguenti numeri reali:
+
+```
+-1.23, +1078.01, -139.99, +0.00042, -0.091, +73.73
+```
+
+<hr>
+
+**Esercizio 323 (caratteri)**
+
+Convertire in byte, secondo la specifica ASCII le seguenti frasi:
+
+```
+frase 1) "un, due, tre, stella!"
+frase 2) "abracadabra"
+frase 3) "ASCII si pronuncia aschi, come il cane"
+```
+
+<br>
+<br>
+
 <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 ## Formati dei file
 
