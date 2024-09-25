@@ -63,7 +63,7 @@ sud).
 
 **bit**
 
-Un bit, contrazione dell'inglese "***binary digit***", è una cifra
+Un bit, contrazione dell'inglese ***binary digit***, è una cifra
 binaria che può essere dunque rappresentata con due singoli stati: lo
 zero (0) oppure l'uno (1). E' l'informazione più piccola che si può
 discernere e viene utilizzato solitamente, insieme ai suoi multipli, per
@@ -75,9 +75,9 @@ tempo.
 **Byte**
 
 Un byte, il cui nome deriva dalla parola inglese ***bite*** (boccone,
-morso; coniato anche per assonanza col termine "bit" ma rinominato per
+morso; coniato anche per assonanza col termine *bit* ma rinominato per
 evitare confusioni accidentali di pronuncia con questo), è una sequenza
-di 8 bit diversi, da cui si deduce che sia in grado di assumere 2^8 =
+di 8 bit diversi, da cui si deduce che sia in grado di assumere 2<sup>8</sup> =
 256 possibili valori (da 0 a 255).
 
 La scelta degli 8 bit per identificare un byte ha radici storiche:
@@ -97,20 +97,20 @@ considerato come l'**unità di misura dell'informazione**.
 ## Il Byte e i suoi multipli
 
 I multipli del byte vengono calcolati con una logica binaria, quindi ad
-esempio il kilobyte non rappresenta 1000, bensì 2^10 byte! Se
-consideriamo però che 2^10^ = 1024, con una piccola approssimazione
+esempio il kilobyte non rappresenta 1000, bensì 2<sup>10</sup> byte! Se
+consideriamo però che 2<sup>10</sup> = 1024, con una piccola approssimazione
 riusciamo a capire le grandezze dei suoi multipli.
 
 Vediamo la tabella:
 
 | Multiplo   |    | Potenza  | Descrizione                           |
 |------------|----|----------|---------------------------------------|
-| kilobyte   | KB | 2^10 B   | Circa 1000 byte                       |
-| megabyte   | MB | 2^20 B   | Circa 1000 KB, circa 1.000.000 byte   |
-| gigabyte   | GB | 2^30 B   | Circa 1000 MB...                      |
-| terabyte   | TB | 2^40 B   | Circa 1000 GB...                      |
-| petabyte   | PB | 2^50 B   | ...                                   |
-| exabyte    | EB | 2^60 B   | ...                                   |
-| zettabyte  | ZB | 2^70 B   | ...                                   |
+| kilobyte   | KB | 2<sup>10</sup> B   | Circa 1000 byte                       |
+| megabyte   | MB | 2<sup>20</sup> B   | Circa 1000 KB, circa 1.000.000 byte   |
+| gigabyte   | GB | 2<sup>30</sup> B   | Circa 1000 MB...                      |
+| terabyte   | TB | 2<sup>40</sup> B   | Circa 1000 GB...                      |
+| petabyte   | PB | 2<sup>50</sup> B   | ...                                   |
+| exabyte    | EB | 2<sup>60</sup> B   | ...                                   |
+| zettabyte  | ZB | 2<sup>70</sup> B   | ...                                   |
 
 
