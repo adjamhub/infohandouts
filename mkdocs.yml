@@ -2,8 +2,9 @@ site_name: Informatics Literacy Course
 site_author: Andrea Diamantini
 
 copyright: >
-    Andrea Diamantini (c) 2022-2023<br>
-    <a href="#__consent">Change Cookie Settings</a>
+    Andrea Diamantini (c) 2022-doomsday<br>
+    <a href="#__consent">Change Cookie Settings</a><br>
+    This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>
 
 # ----------------------------------------------------
 
@@ -12,15 +13,15 @@ theme:
   palette:
   # Palette toggle for light mode
   - scheme: default
-    primary: pink
-    accent: purple
+    primary: red
+    accent: pink
     toggle:
       icon: material/brightness-7 
       name: Switch to dark mode
   # Palette toggle for dark mode
   - scheme: slate
-    primary: pink
-    accent: purple
+    primary: red
+    accent: pink
     toggle:
       icon: material/brightness-4
       name: Switch to light mode
