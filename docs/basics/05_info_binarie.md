@@ -565,7 +565,7 @@ I colori fondamentali sono Rosso (Red), Verde (Green), Blu (Blue).
 
 La somma dei 3 colori fondamentali fa il BIANCO!!!
 
-Ogni colore fondamentale costa un byte, quindi ogni colore "pesa" 3 byte, ovvero sono rappresentabili 224 colori diversi: circa 16 milioni di colori!
+Ogni colore fondamentale costa un byte, quindi ogni colore "pesa" 3 byte, ovvero sono rappresentabili 2<sup>24</sup> colori diversi: circa 16 milioni di colori!
 
 Il web utilizza questa sintesi dei colori.
 
@@ -586,7 +586,7 @@ I colori fondamentali sono i colori complementari dei colori primari della sinte
 
 La somma dei 3 colori fondamentali fa il NERO!!!!
 
-Ogni colore fondamentale costa un byte, quindi ogni colore "pesa" 4 byte, ovvero sono rappresentabili 2 alla 32 colori diversi: circa 4 miliardi di colori!
+Ogni colore fondamentale costa un byte, quindi ogni colore "pesa" 4 byte, ovvero sono rappresentabili 2<sup>32</sup> colori diversi: circa 4 miliardi di colori!
 
 Questa particolare sintesi, seppure più pesante della precedente, permette di arrivare ad un numero quasi incredibile di colori diversi. La presenza del grigio come colore primario permette nella realtà una implementazione dei colori Nero e Bianco più che perfetta: avete mai sentita la pubblicità delle TV che fanno vedere un nero bellissimo?! Bene… quelle TV "colorano" lo schermo di nero invece di tenerle spente. Usano CMYK!!!
 
