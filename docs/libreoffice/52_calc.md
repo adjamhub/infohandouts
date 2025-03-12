@@ -43,10 +43,10 @@ I formati principali che Calc è in grado di gestire sono:
 
 Ogni file di Calc contiene almeno un foglio elettronico (***sheet***).
 Ogni foglio è suddiviso in tante caselle (***cell***). Tante quante?
-Esattamente 1.073.741.824! O per meglio dire 2^30^. Infatti le righe,
+Esattamente 17.179.869.184! O per meglio dire 2<sup>34</sup>. Infatti le righe,
 che sono indicate con un numero crescente, vanno da 1 fino a 1.048.576
-(cioè 2^20^), mentre le colonne, che sono indicate con una combinazione
-di lettere da A fino ad AMJ, sono 1024 (cioè 2^10^). E il prodotto di 2
+(cioè 2<sup>20</sup>), mentre le colonne, che sono indicate con una combinazione
+di lettere da A fino ad XFD, sono 16.384 (cioè 2<sup>14</sup>). E il prodotto di 2
 potenze con la stessa base è un calcolo molto semplice...
 
 Con tante caselle a disposizione dovremmo capire subito un concetto
