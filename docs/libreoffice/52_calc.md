@@ -17,7 +17,7 @@ software liberi e opensource il migliore è sicuramente LibreOffice Calc.
 Quale sia il migliore fra tutti... è una partita aperta!
 
 
-![LibreOffice Calc](lo_calc.png)
+![LibreOffice Calc](images/lo_calc.png)
 
 
 ## Gestione Files
@@ -73,7 +73,7 @@ Ogni casella del foglio elettronico è individuabile incrociando le sue
 coordinate
 
 
-![coordinate](coordinate.png)
+![coordinate](images/coordinate.png)
 
 
 Nello screenshot a fianco, è stata selezionata la **casella B2**, le cui
@@ -81,7 +81,7 @@ coordinate sono state ottenute prendendo la colonna (B) e la riga (2) in
 cui la casella si trova.
 
 
-![selezione rettangolare](selezione_rettangolare.jpg)
+![selezione rettangolare](images/selezione_rettangolare.jpg)
 
 
 In questa immagine invece, abbiamo una ***selezione rettangolare***,
@@ -92,8 +92,7 @@ con le coordinate delle caselle:
 ***"in alto a sx" : "in basso a dx"***
 
 
-Nel nostro esempio l'area selezionata di individua con le **coordinate
-B2:D8**.
+Nel nostro esempio l'area selezionata di individua con le **coordinate B2:D8**.
 
 
 
@@ -107,21 +106,21 @@ Esso contiene da solo tutte le funzionalità e caratteristiche di cui abbiamo pa
 Il suo nome di default è "Foglio1".
 
 
-![foglio 1](foglio1.jpg)
+![foglio 1](images/foglio1.jpg)
 
 
 Se fai doppio click sopra al nome, appare una finestra in cui puoi
 modificare il nome a tuo piacere.
 
 
-![più fogli](piu_fogli.jpg)
+![più fogli](images/piu_fogli.jpg)
 
 
 Come si vede dall'immagine è possibile aggiungere altri fogli allo stesso file, semplicemente cliccando sul *+* evidenziato nel disegno!
 
 Chi è curioso dei numeri sappia che ogni file LibreOffice Calc supporta fino a 10.000 fogli!!
 
-Credo possano bastare... per una vita! Non solo per un file\...
+Credo possano bastare... per una vita! Non solo per un file...
 
 
 
@@ -129,7 +128,7 @@ Credo possano bastare... per una vita! Non solo per un file\...
 
 
 Ogni casella di Calc può gestire dati in un diverso formato, che è
-possibile specificare tramite l'opzione "***Formatta celle\...***" dal
+possibile specificare tramite l'opzione "***Formatta celle...***" dal
 menù Formato oppure più semplicemente, dal menù contestuale.
 
 
@@ -169,7 +168,7 @@ provare man mano che vado avanti con gli esempi e le spiegazioni.
 Per prima cosa scrivete un "1" in una casella del foglio elettronico.
 
 
-![uno](uno.jpg)
+![uno](images/uno.jpg)
 
 
 Se rimanete sopra di esso con la selezione
@@ -182,7 +181,7 @@ A questo punto avvicinate il mouse alla casella selezionata, precisamente al qua
 basso a sinistra di essa, fino a che il puntatore non diventa un "mirino" ( + ).
 
 
-![uno giù](uno_giu.jpg)
+![uno giù](images/uno_giu.jpg)
 
 
 Con il puntatore a mirino, trascinate la casella selezionata, quella con
@@ -198,13 +197,13 @@ Come vedete, ho scritto "**per**" di fianco al numero 1. Metto il
 puntatore vicino al quadratino basso della selezione e con il mirino
 tiro verso il basso.
 
-![per](per.jpg)
+![per](images/per.jpg)
 
 
 Questa volta le parole sono state semplicemente copiate, senza alcuna modifica o incremento.
 
 
-![per giù](per_giu.jpg)
+![per giù](images/per_giu.jpg)
 
 
 !!! note "Riassumendo:"
@@ -215,13 +214,12 @@ Questa volta le parole sono state semplicemente copiate, senza alcuna modifica o
 
 Adesso proviamo a modificare il comportamento predefinito. Scriviamo un numero di fianco alla scritta "per" (nel mio
 esempio 5), posizioniamo il puntatore vicino al quadratino basso della
-selezione per la modalità "mirino" e teniamo premuto CTRL (il tasto
-CONTROL) sulla tastiera.
+selezione per la modalità "mirino" e teniamo premuto ++CTRL++ sulla tastiera.
 
 Il trascinamento copierà i numeri come fossero parole
 
 
-![cinque giù](cinque_giu.jpg)
+![cinque giù](images/cinque_giu.jpg)
 
 
 Aggiungiamo una nuova stringa con il solito trascinamento e passiamo alla novità di adesso.
@@ -230,12 +228,12 @@ Aggiungiamo una nuova stringa con il solito trascinamento e passiamo alla novit�
 
 Nella casella del risultato (G4, nel mio esempio) vado a scrivere:
 
-= C4 \* E4
+= C4 * E4
 
 Così come lo vedete qui e come appare sulla barra della formula.
 
 
-![formula](formula.jpg)
+![formula](images/formula.jpg)
 
 
 L'uguale all'inizio di una casella induce il foglio elettronico ad eseguire una operazione.
@@ -265,7 +263,7 @@ guardate cosa succede alle caselle con le formule...
 
 **Esempio 2: tabelline**
 
-Compresi i concetti del primo esempio, aumentiamo un po\' la velocità.
+Compresi i concetti del primo esempio, aumentiamo un po' la velocità.
 
 Preparate un nuovo foglio in questo modo:
 
@@ -339,7 +337,7 @@ grafica :)
 Partiamo da una tabella qualunque...
 
 
-![](tabella_voti.jpg)
+![](images/tabella_voti.jpg)
 
 
 Selezioniamo i dati interessanti, da rendere in un grafico. Nel nostro
@@ -347,21 +345,21 @@ caso, volendo rappresentare i voti per materia di Pinco Pallino vado a
 selezionare le caselle **A2 : B6**
 
 
-![](tabella_voti_selezionata.jpg)
+![](images/tabella_voti_selezionata.jpg)
 
 
 A questo punto andiamo a inserire il grafico con l'azione GRAFICO dal
 menù INSERISCI:
 
 
-![](tabella_voti_grafico.jpg)
+![](images/tabella_voti_grafico.jpg)
 
 
 A questo punto si presenta la finestra di selezione grafico. Cosa vi
 devo dire? Scegliete quello che vi piace di più...
 
 
-![](grafico1.jpg)
+![](images/grafico1.jpg)
 
 
 Ci sono 4 step in questa procedura guidata, ma i due complicati, **Area
@@ -372,7 +370,7 @@ Passate all'ultima scheda per decidere il titolo e la posizione della
 legenda e premete FINE!
 
 
-![](grafico_finale.jpg)
+![](images/grafico_finale.jpg)
 
 
 Ecco fatto!
@@ -420,7 +418,7 @@ della barra della formula per l'inserimento guidato di una funzione.
 
 
 
-![](funzione_pulsante.jpg)
+![](images/funzione_pulsante.jpg)
 
 
 A questo punto:
@@ -430,7 +428,7 @@ A questo punto:
 3. si segue la procedura guidata per la creazione della funzione selezionata
 
 
-![](funzione_selezione.jpg)
+![](images/funzione_selezione.jpg)
 
 
 Certo... più o meno è proprio così... e se fosse così facile in un paio
@@ -455,3 +453,4 @@ affrontare) sono organizzate nella seguente modalità:
 - Formattazione condizionale
 - Formule composte
 - Filtri, subtotali, tabelle pivot
+

@@ -16,7 +16,7 @@ l'editor LibreOffice Writer.
 
 
 
-![Editor di documenti](doc_editor.png)
+![Editor di documenti](images/doc_editor.png)
 
 
 
@@ -32,12 +32,12 @@ partire da un documento vuoto, ha la possibilità di:
 
 - creare lettere, fax e altro tramite una procedura guidata,
     
-  ![procedure guidate](procedure_guidate.jpg)
+  ![procedure guidate](images/procedure_guidate.jpg)
   
 
 - partire da un modello di base salvato nel PC,
 
-  ![modelli](modelli.jpg)
+  ![modelli](images/modelli.jpg)
 
 
 - scaricare un modello gratuito a piacimento dal sito <a target="_blank" href="https://extensions.libreoffice.org/templates">https://extensions.libreoffice.org/templates</a>.
@@ -65,7 +65,7 @@ metterlo grassetto, giusto?!
 Per diventare un titolo bisogna modificarne lo stile! Guardate la figura sotto (è orribile, lo so).
 
 
-![stili](stili.jpg)
+![stili](images/stili.jpg)
 
 
 Per ottenere un titolo, bisogna modificarne lo stile da "Corpo del
@@ -114,7 +114,7 @@ Semplice! Si evidenzia la parola e si clicca su uno dei pulsanti sopra.
 Si possono anche sovrapporre più modifiche, ad esempio:
 
 Questo testo viene scritto in font: "Dejavu Sans", dimensione 14,
-corsivo e sottolineato. E la parola ~~testo~~ è barrata.
+corsivo e sottolineato. E la parola <del>testo</del> è barrata.
 
 Quando si seleziona una parola o più, lo stile che vi si applica viene
 applicato per carattere: ogni carattere della selezione viene modificato
@@ -169,7 +169,7 @@ non alla pagina corrente, ma ***a tutte le pagine del documento***!
     Continuando l'analogia, il corpo della pagina viene chiamato ***body***
   
 
-![Intestazioni e piè di pagina](header_footer.jpg){style="float:left;margin-right:20px"}
+![Intestazioni e piè di pagina](images/header_footer.jpg){style="float:left;margin-right:20px"}
 
 L'intestazione e il piè di pagina sono due aree *separate* del foglio che
 si trovano rispettivamente sopra e sotto il corpo centrale della pagina.
@@ -236,6 +236,7 @@ il sottomenù `INDICE GENERALE E INDICE ANALITICO`, poi selezionare la voce
 Dall'interfaccia che appare, selezionare "Indice Generale" e premere invio. 
 L'indice generale viene creato automaticamente nella posizione selezionata controllando tutti i titoli presenti nel proprio documento.
 
+
 !!! warning "Attenzione!"
 
     Dopo aver creato l'indice generale, questo non si aggiorna automaticamente!!
@@ -245,11 +246,12 @@ L'indice generale viene creato automaticamente nella posizione selezionata contr
 
     **Ricordatelo!**
 
+
 Se modifichiamo gli stili dei titoli questi non saranno inseriti
 automaticamente nell'indice, ma dovranno essere inseriti
 dall'interfaccia grafica selezionandone il nome ed indicando il livello
 
-![indice generale o analitico](indice.jpg)
+![indice generale o analitico](images/indice.jpg)
 
 Dalla finestra di inserimento indice, mettete la spunta su "stili
 aggiuntivi", poi dal pulsante "Assegna Stili" andate ad indicare il
@@ -285,7 +287,7 @@ l'indirizzo del sito che volete aprire quando si clicca l'oggetto!
 
     In Writer, click e doppio click selezionano un oggetto! 
     
-    Per aprire un collegamento occorre selezionare **CTRL + CLICK**.
+    Per aprire un collegamento fate click su di esso tenendo premuto ++CTRL++ !!!
 
 
 
@@ -313,12 +315,13 @@ IMMAGINE, da qui selezionare il file e premere invio.
 Per permettere all'immagine di posizionarsi correttamente secondo il
 nostro volere bisogna considerare alcune cose:
 
+
 | Proprietà                  | Descrizione                                                                                   |
-|----------------------------|-----------------------------------------------------------------------------------------------|
-| Ancoraggio                 | Stabilisce come l'immagine è legata al testo.                                                 |
-| Scorrimento                | Stabilisce in quale modo il testo debba scorrere sull'immagine e se esso possa attraversarla. |
-| Allineamento               | Stabilisce l'allineamento dell'immagine rispetto all'ancoraggio.                              |
-| Bordi e distanza dal testo | Sono parametri che si possono modificare dalle proprietà dell'immagine.                       |
+|----------------------------|-------------------------------------------------------------------------------------|
+| Ancoraggio                 | Stabilisce come l'immagine è legata al testo.                                       |
+| Scorrimento                | Stabilisce il modo in cui il testo scorre sull'immagine e se può attraversarla.     |
+| Allineamento               | Stabilisce l'allineamento dell'immagine rispetto all'ancoraggio.                    |
+| Bordi e distanza dal testo | Sono parametri che si possono modificare dalle proprietà dell'immagine.             |
 
 
 

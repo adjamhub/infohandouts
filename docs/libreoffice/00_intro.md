@@ -12,7 +12,7 @@ Le sue caratteristiche peculiari sono che tutta la suite è un software rilascia
 e che supporta attualmente tutti i maggiori sistemi operativi desktop: Windows, Mac, Linux.
 
 
-![libreoffice icons](lo_icons.png)
+![libreoffice icons](images/lo_icons.png)
 
 
 Nell'ordine dall'alto a sinistra, le icone di:
@@ -30,7 +30,7 @@ Dalla versione 6, LibreOffice comprende anche una interfaccia iniziale,
 chiamata semplicemente LibreOffice e che viene identificata dall'icona qui sotto!
 
 
-![libreoffice icon](lo_icon.png)
+![libreoffice icon](images/lo_icon.png)
 
 
 ## Una pagina di storia
@@ -90,14 +90,14 @@ La prima illustra quello che succede quando ci si dimentica di applicare
 uno standard:
 
 
-!["no standards"](no_standard.jpg)
+!["no standards"](images/no_standard.jpg)
 
 
 La seconda illustra quello che può succedere utilizzando standard
 chiusi:
 
 
-!["standards chiusi"](close_standards.jpg)
+!["standards chiusi"](images/close_standards.jpg)
 
 
 Insomma... a me sembra molto chiaro...
@@ -153,7 +153,7 @@ programmi della suite e alla cronologia dei file già editati con
 qualunque di questi.
 
 
-!["Interfaccia comune"](lo_common_interface.png)
+!["Interfaccia comune"](images/lo_common_interface.png)
 
 
 Da essa (e da qualunque dei suoi software) è possibile accedere alle
@@ -170,7 +170,7 @@ e scegliere la voce **OPZIONI**: vi troverete davanti una interfaccia
 come questa.
 
 
-!["dati utente"](lo_user_data.jpg)
+!["dati utente"](images/lo_user_data.jpg)
 
 
 Nella scheda **DATI UTENTE** del gruppo **LIBREOFFICE** inserite i
@@ -178,7 +178,7 @@ vostri dati: compilate i campi che volete, ma almeno il nome e il
 cognome dovete inserirli!
 
 
-![finestra delle proprietà](lo_info.jpg)
+![finestra delle proprietà](images/lo_info.jpg)
 
 
 Da questo momento qualsiasi documento che create sarà
