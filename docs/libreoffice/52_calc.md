@@ -214,7 +214,7 @@ Questa volta le parole sono state semplicemente copiate, senza alcuna modifica o
 
 Adesso proviamo a modificare il comportamento predefinito. Scriviamo un numero di fianco alla scritta "per" (nel mio
 esempio 5), posizioniamo il puntatore vicino al quadratino basso della
-selezione per la modalità "mirino" e teniamo premuto ++CTRL++ sulla tastiera.
+selezione per la modalità "mirino" e teniamo premuto ++ctrl++ sulla tastiera.
 
 Il trascinamento copierà i numeri come fossero parole
 
