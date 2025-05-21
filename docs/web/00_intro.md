@@ -17,8 +17,10 @@ fra loro un mix di tecnologie, tra cui:
 - [HTML](10_html5.md), il linguaggio di markup delle pagine web
 - [CSS](20_css.md), il linguaggio che serve a definire gli stili delle pagine
 - [JAVASCRIPT](30_js.md), un linguaggio di programmazione web lato client
-- [PHP](40_php.md), un linguaggio di programmazione web lato server
 
 Questi primi esempi non esauriscono la quantità di tecnologia diversa e
 "organizzata" tramite la quale è composto il www, ma di sicuro
 rappresentano i linguaggi più importanti su cui questo si basa.
+
+<br>
+<br>

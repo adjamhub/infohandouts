@@ -425,3 +425,6 @@ del testo evidenziando con i tag opportuni i passaggi più importanti.
 
 Aggiungere i commenti HTML opportuni ove necessario per la comprensione.
 
+<br>
+<br>
+
