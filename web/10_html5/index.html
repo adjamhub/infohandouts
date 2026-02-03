@@ -1,0 +1,1442 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Andrea Diamantini">
+      
+      
+      
+        <link rel="prev" href="../00_intro/">
+      
+      
+        <link rel="next" href="../20_css/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>HTML - Informatics Literacy Course</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#html" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href="../.." title="Informatics Literacy Course" class="md-header__button md-logo" aria-label="Informatics Literacy Course" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Informatics Literacy Course
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              HTML
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="pink"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../basics/00_intro/" class="md-tabs__link">
+          
+  
+  Basics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../hwsw/00_intro/" class="md-tabs__link">
+          
+  
+  Hardware & Software
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../libreoffice/00_intro/" class="md-tabs__link">
+          
+  
+  Libreoffice
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../00_intro/" class="md-tabs__link">
+          
+  
+  Web
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Informatics Literacy Course" class="md-nav__button md-logo" aria-label="Informatics Literacy Course" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Informatics Literacy Course
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basics/00_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basics/01_storia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basics/05_info_binarie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rappresentare le Informazioni
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hardware & Software
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Hardware & Software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hwsw/00_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hwsw/10_hw/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hardware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hwsw/20_sw/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Libreoffice
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Libreoffice
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libreoffice/00_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libreoffice/51_writer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Writer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libreoffice/52_calc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Calc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Web
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    HTML
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    HTML
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tag-html-elementi-e-attributi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tag HTML: elementi e attributi
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#titoli-headings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Titoli (Headings)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paragrafi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paragrafi
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#immagini" class="md-nav__link">
+    <span class="md-ellipsis">
+      Immagini
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link" class="md-nav__link">
+    <span class="md-ellipsis">
+      Link
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interruzioni-di-linea" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interruzioni di linea
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linee-di-interruzione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linee di interruzione
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#il-problema-delle-poesie-in-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      Il problema delle poesie in HTML
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formattazione-del-testo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formattazione del testo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esercizi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizi
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20_css/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30_js/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="html">HTML</h1>
+<p>HTML Sta per <strong><em>Hyper Textual Markup Language</em></strong>.</p>
+<p>Siamo alla versione 5.x</p>
+<p>Utilizza documenti di testo semplice, con estensione .html</p>
+<p>Si basa sui TAG, che funzionano come le parentesi (apri tag, scrivi, chiudi tag).</p>
+<p>Tutta la pagina è racchiusa all'interno del tag HTML, che a sua volta si
+suddivide in</p>
+<ul>
+<li>HEAD, il tag contenente le (meta) informazioni sulla pagina</li>
+<li>BODY, il tag contenente la pagina che sarà visualizzata nel browser</li>
+</ul>
+<p>La struttura di base di una pagina web (HTML 5.x) è la seguente:</p>
+<div class="highlight"><span class="filename">Esempio 1</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;!doctype html&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;it&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="cm">&lt;!-- questo è un commento HTML --&gt;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Il titolo della pagina<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="cm">&lt;!-- qui il codice della pagina che sarà visualizzato nel browser --&gt;</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Ciao, questo è un titolo di capitolo<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Questo è un paragrafo e io sono la tua prima pagina web :)<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Per provare, copiate l'esempio sopra su un editor di testo (ad esempio, il Blocco Note di Windows) e salvate il file con estensione <code>.html</code> (ad esempio, con il nome <code>prova.html</code>).</p>
+<p>Poi, fate doppio click sopra il file...</p>
+<h2 id="tag-html-elementi-e-attributi">Tag HTML: elementi e attributi</h2>
+<p>Il body rappresenta come uno sfondo bianco sopra il quale galleggiano
+una serie di rettangoli, che rappresentano tutti gli elementi della
+pagina.</p>
+<p>Ogni elemento viene definito tramite un tag, ovvero un "comando" HTML
+che specifica un tipo di informazione contenuta nella pagina. Ad esempio
+con un tag possiamo indicare un titolo, un testo, un immagine, un video,
+etc...</p>
+<p>I tag si scrivono nella forma</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">tag</span><span class="p">&gt;</span> contenuto <span class="p">&lt;/</span><span class="nt">tag</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>oppure semplicemente</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">tag</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Nonostante l'HTML sia un linguaggio fortemente tollerante con errori
+sintattici di ogni genere, elenchiamo subito le regole auree da
+ricordare per il buon funzionamento delle pagine che si scrivono
+(soprattutto, perché venga visualizzato esattamente ciò che pensiamo di
+avere scritto...):</p>
+<ul>
+<li>i tag che contengono testo hanno il tag di apertura e il tag di chiusura (es: <tag>testo</tag>)</li>
+<li>ripeto: non vi scordate il tag di chiusura!</li>
+<li>I tag si scrivono SEMPRE e SOLO con lettere MINUSCOLE!!!</li>
+<li>I tag si possono "nidificare" con la logica delle parentesi, ovvero l'ordine di chiusura dei tag deve essere rovesciato rispetto all'ordine di apertura (un esempio è meglio di 1000 parole!)</li>
+</ul>
+<p><img alt="tag nidificati" src="../tag_nidificati.png" /></p>
+<p>Inoltre i tag possono contenere delle informazioni opzionali, chiamate
+<strong><em>attributi</em></strong>, che specificano il senso del tag (ad esempio, il tag
+che identifica un area cliccabile... dove ti porta quando ci clicchi?
+Data una immagine, possiamo definire la sua larghezza? Etc...). Gli
+attributi sono sempre inseriti nel tag di apertura e sono sempre
+specificati con la sintassi nome="valore".</p>
+<p>Ad esempio:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">tag</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;200px&quot;</span><span class="p">&gt;</span> ciao <span class="p">&lt;/</span><span class="nt">tag</span><span class="p">&gt;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">&lt;</span><span class="nt">altrotag</span> <span class="na">saluto</span><span class="o">=</span><span class="s">&quot;ciao&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Vediamo i tag più importanti, aggiungendo per ognuno uno o più esempi da
+testare nei propri files (fatelo! O non capirete nulla di quello che
+leggete! Invece con 2 minuti di prova per ogni gruppo le cose si
+chiariranno in un secondo!).</p>
+<h2 id="titoli-headings">Titoli (Headings)</h2>
+<p>I titoli sono definiti dai tag H1, H2, H3, H4, H5, H6. Il titolo più
+importante è il titolo H1, poiché a decrescere in ordine gerarchico.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span> Titolo 1 <span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span> Titolo 2 <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span> Titolo 3 <span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span> Titolo 4 <span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="p">&lt;</span><span class="nt">h5</span><span class="p">&gt;</span> Titolo 5 <span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="p">&lt;</span><span class="nt">h6</span><span class="p">&gt;</span> Titolo 6 <span class="p">&lt;/</span><span class="nt">h6</span><span class="p">&gt;</span>
+</code></pre></div>
+<h2 id="paragrafi">Paragrafi</h2>
+<p>I paragrafi di testo sono contenuti all'interno di un tag P. Prova a
+scrivere l'esempio qui sotto e a vedere su una pagina web cosa succede.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Questo è un paragrafo.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Questo è un altro paragrafo.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Qui scrivi un altro paragrafo con abbastanza testo per riempire la
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>riga ed andare a capo.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+<h2 id="immagini">Immagini</h2>
+<p>Le immagini si inseriscono in una pagina HTML con il tag IMG. Ovviamente
+in questo tag esiste un attributo, l'attributo SRC, che permette di
+specificare il percorso dell'immagine da visualizzare. Altro attributo
+obbligatorio per le immagini è l'attributo ALT, che permette di
+specificare un testo alternativo nel caso ad esempio di problemi nella
+visualizzazione dell'immagine.</p>
+<p>Nell'esempio sotto il file "prova.jpg" si deve trovare nella stessa
+cartella del file contenente quel codice.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;prova.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;un&#39;immagine qualsiasi&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;500px&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+<h2 id="link">Link</h2>
+<p>I link sono le aree cliccabili delle pagine web. Contengono (ovviamente)
+un attributo (href) che permette di specificare la pagina che si vuole
+raggiungere quando si seleziona il link.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.adjam.org/&quot;</span><span class="p">&gt;</span>la pagina del prof<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>I link hanno inoltre un attributo chiamato TARGET che specifica dove
+aprire la pagina indicata nel link.</p>
+<p>I possibili valori per esso sono:</p>
+<ul>
+<li><code>_self</code> (default): apre il link nella stessa finestra (o scheda)</li>
+<li><code>_blank</code>: apre il link in una nuova finestra (o scheda)</li>
+</ul>
+<p>Esistono anche altri valori per l'attributo, ma si riferiscono ai frame,
+che sono una cosa che non voglio impariate :)</p>
+<p>Con i link è possibile inoltre creare dei bookmark all'interno della
+pagina stessa per portare l'utente in navigazione non solo su una
+pagina, ma su un punto esatto di essa. Il riferimento si può creare in
+qualsiasi tag con l'attributo ID, il link viene creato dal link alla
+pagina più il nome del bookmark.</p>
+<div class="highlight"><span class="filename">Bookmark</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;ip&quot;</span><span class="p">&gt;</span>Il protocollo IP<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Link (con fragment)</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#ip&quot;</span><span class="p">&gt;</span>Vai al capitolo sul protocollo IP<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</code></pre></div>
+<h2 id="interruzioni-di-linea">Interruzioni di linea</h2>
+<p>Come andare a capo quando vogliamo noi invece che a seconda di come
+viene visualizzata la pagina HTML? Con il tag BR</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>In questo<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>esempio ogni<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span> due parole<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span> vado a <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>capo!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+<h2 id="linee-di-interruzione">Linee di interruzione</h2>
+<p>E se volessimo addirittura interrompere o separare due paragrafi con una
+bella linea orizzontale? Basta aggiungere un tag HR!</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Paragrafo SOPRA la linea<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span> <span class="cm">&lt;!-- LINEA ORIZZONTALE --&gt;</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Paragrafo SOTTO la linea<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+<h2 id="il-problema-delle-poesie-in-html">Il problema delle poesie in HTML</h2>
+<p>E se uno dovesse ricopiare una poesia o un testo e mantenere inalterati
+spazi e capoversi? Per testo preformattato si usa il tag PRE. Tutto (e
+solo) il testo dentro questo tag sarà formattato esattamente come
+trascritto. Provare per credere!</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="p">&lt;</span><span class="nt">pre</span><span class="p">&gt;</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>Si sta come
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>d&#39;autunno
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>sugli alberi
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>le foglie
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="p">&lt;/</span><span class="nt">pre</span><span class="p">&gt;</span>
+</code></pre></div>
+<h2 id="formattazione-del-testo">Formattazione del testo</h2>
+<p>Esistono tag che servono per la formattazione del testo: grassetto,
+corsivo, barrato, apice, pedice sono formattazioni particolari
+ottenibili coi seguenti tag:</p>
+<table>
+<thead>
+<tr>
+<th>TAG</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B</td>
+<td>(bold) testo in grassetto</td>
+</tr>
+<tr>
+<td>STRONG</td>
+<td>Testo semanticamente Importante (la resa è uguale al grassetto)</td>
+</tr>
+<tr>
+<td>I</td>
+<td>(italic) testo in corsivo</td>
+</tr>
+<tr>
+<td>EM</td>
+<td>(emphasized) testo enfatizzato (la resa è uguale al corsivo)</td>
+</tr>
+<tr>
+<td>MARK</td>
+<td>(marked) testo evidenziato</td>
+</tr>
+<tr>
+<td>SMALL</td>
+<td>Testo rimpicciolito</td>
+</tr>
+<tr>
+<td>DEL</td>
+<td>(deleted) testo cancellato</td>
+</tr>
+<tr>
+<td>INS</td>
+<td>(inserted) testo inserito</td>
+</tr>
+<tr>
+<td>SUB</td>
+<td>(subscripted) testo a pedice</td>
+</tr>
+<tr>
+<td>SUP</td>
+<td>(superscripted) testo ad apice</td>
+</tr>
+</tbody>
+</table>
+<p>Anche qui, provare per capire e verificare</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>Testo in grassetto<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>Fate i compiti!<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>La parola <span class="p">&lt;</span><span class="nt">i</span><span class="p">&gt;</span>ciao<span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> è in corsivo <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>Sveglia!<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span> Disse il docente arrabbiato... <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="p">&lt;</span><span class="nt">mark</span><span class="p">&gt;</span>Testo evidenziato <span class="p">&lt;/</span><span class="nt">mark</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>Testo <span class="p">&lt;</span><span class="nt">small</span><span class="p">&gt;</span>piccolo<span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>oops... <span class="p">&lt;</span><span class="nt">del</span><span class="p">&gt;</span>sbagliato!<span class="p">&lt;/</span><span class="nt">del</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>Aggiungi <span class="p">&lt;</span><span class="nt">ins</span><span class="p">&gt;</span>questo<span class="p">&lt;/</span><span class="nt">ins</span><span class="p">&gt;</span>! <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>Elenco con pedici: a<span class="p">&lt;</span><span class="nt">sub</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">sub</span><span class="p">&gt;</span>, a<span class="p">&lt;</span><span class="nt">sub</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">sub</span><span class="p">&gt;</span>,
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>a<span class="p">&lt;</span><span class="nt">sub</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">sub</span><span class="p">&gt;</span>... <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a>
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a>Potenze (apici): a<span class="p">&lt;</span><span class="nt">sup</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">sup</span><span class="p">&gt;</span> + b<span class="p">&lt;</span><span class="nt">sup</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">sup</span><span class="p">&gt;</span> ... <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>che diventa:</p>
+<div style="background:#AABBFF">
+<b>Testo in grassetto</b> <br>
+
+<strong>Fate i compiti!</strong> <br>
+
+La parola <i>ciao</i> è in corsivo <br>
+
+<em>Sveglia!</em> Disse il docente arrabbiato... <br>
+
+<mark>Testo evidenziato </mark> <br>
+
+Testo <small>piccolo</small> <br>
+
+oops... <del>sbagliato!</del> <br>
+
+Aggiungi <ins>questo</ins>! <br>
+
+Elenco con pedici: a<sub>1</sub>, a<sub>2</sub>,
+a<sub>3</sub>... <br>
+
+Potenze (apici): a<sup>2</sup> + b<sup>3</sup> ... <br>
+</div>
+
+<h2 id="esercizi">Esercizi</h2>
+<p>In questa sessione di esercizi troveremo pagine da realizzare
+contenenti:</p>
+<ul>
+<li>titoli</li>
+<li>paragrafi</li>
+<li>link</li>
+<li>immagini</li>
+<li>formattazioni delle linee (break) e del testo</li>
+</ul>
+<p>Crea una directory sul Desktop del tuo PC chiamata "EserciziHTML". Al
+suo interno crea un file HTML contenente una pagina HTML vuota e
+rinominalo "skeleton.html". Infine crea una cartella denominata
+"immagini".</p>
+<p>Contenuto del file skeleton.html</p>
+<div class="highlight"><span class="filename">Skeleton</span><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="cp">&lt;!doctype html&gt;</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;it&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="hll"><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Titolo<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>...
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Quando hai finito gli esercizi potrai esportare la cartella
+"EserciziHTML" essendo sicuro di portare via tutto il necessario :)</p>
+<p>La cosa più "furba" da fare da qui in poi secondo me è fare copia e
+incolla del file "skeleton.html" nel file "EsercizioX.html" e poi
+modificare quest'ultimo avente già la struttura di base pronta.</p>
+<p>Proviamo!</p>
+<p>Per svolgere ognuno dei seguenti esercizi va creato un file (a partire
+dal file skeleton.html) che si chiama come l'esercizio stesso.</p>
+<p>Ad esempio, il primo esercizio sarà da svolgere nel file
+"esercizioA01.html".</p>
+<hr />
+<p><strong>Esercizio A01</strong></p>
+<p>Inserire nel body un titolo H1, un paragrafo con testo a piacere e una
+immagine dopo il paragrafo. Ridimensionare l'immagine a grandezza fissa.
+(width e height). Decidete voi quale in base all'immagine scelta, ma
+fate in modo che sia più piccola dell'originale. Il file dell'immagine
+va ovviamente salvato nell'apposita cartella delle immagini. Ricordatevi
+il testo alternativo!!!</p>
+<hr />
+<p><strong>Esercizio A02</strong></p>
+<p>Aggiungere, dopo l'immagine, un titolo H2 chiamato "Link" e sotto un
+link al sito del corso dvjlabs.org. State attenti ad aggiungere,
+nell'attributo HREF, tutto il link assoluto
+"<a href="https://www.dvjlabs.org/">https://www.dvjlabs.org</a>".</p>
+<hr />
+<p><strong>Esercizio A03</strong></p>
+<p>Aggiungere all'immagine un link in modo tale che, al click
+sull'immagine, essa venga aperta, in una nuova scheda, alla dimensione
+originale.</p>
+<hr />
+<p><strong>Esercizio A04</strong></p>
+<p>Aggiungere sotto al titolo dei link alcuni esempi di link a piacere,
+separati ognuno da una linea orizzontale</p>
+<hr />
+<p><strong>Esercizio A05</strong></p>
+<p>Aggiungere un titolo H2 chiamato HTML. Copiare in un paragrafo P le
+prime righe di Wikipedia che parlano di HTML. Fate in modo che occupino
+oltre 10 righe.</p>
+<p>Aggiungere un titolo H2 chiamato URL. Copiare in un paragrafo P le prime
+righe di Wikipedia che parlano di un URL. Come sopra.</p>
+<hr />
+<p><strong>Esercizio A06</strong></p>
+<p>Titolo H2 chiamato "La poesia dell'informatico". Comporre una poesia di
+4 righe in rima baciata e inserirla sotto il titolo.</p>
+<hr />
+<p><strong>Esercizio A07</strong></p>
+<p>Aggiungere i bookmarks (con il tag ID) a tutti i titoli della pagina. In
+fondo, aggiungere un nuovo titolo H1 chiamato MAPPA e mettere i link per
+andare velocemente a tutte le parti della pagina.</p>
+<hr />
+<p><strong>Esercizio A08</strong></p>
+<p>Rileggere tutto il testo scritto e aggiungere l'opportuna formattazione
+del testo evidenziando con i tag opportuni i passaggi più importanti.</p>
+<p>Aggiungere i commenti HTML opportuni ove necessario per la comprensione.</p>
+<p><br>
+<br></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Torna su
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Piede" >
+        
+          
+          <a href="../00_intro/" class="md-footer__link md-footer__link--prev" aria-label="Precedente: Introduzione">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Precedente
+              </span>
+              <div class="md-ellipsis">
+                Introduzione
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../20_css/" class="md-footer__link md-footer__link--next" aria-label="Successivo: CSS">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Successivo
+              </span>
+              <div class="md-ellipsis">
+                CSS
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Andrea Diamantini (c) 2022-doomsday<br> <a href="#__consent">Change Cookie Settings</a><br> This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+
+  
+
+<h4>Consenso all'uso dei Cookie(s)</h4>
+<p>Questo sito memorizza alcuni cookies solo per riconoscere un visitatore  che non è alla sua prima visita e alcune preferenze, come il tema di visualizzazione della pagina selezionato.<br> Se non acconsenti, questa finestra riapparirà ogni volta che riapri il sito.<br> Se vuoi cambiare le tue scelte, in fondo alla pagina trovi un link per modificarle ;)
+</p>
+<input class="md-toggle" type="checkbox" id="__settings" checked>
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accetta</button>
+    
+    
+    
+  
+    
+    
+      <button type="reset" class="md-button md-button--primary">Rifiuta</button>
+    
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.tabs", "navigation.sections", "navigation.top", "toc.integrate", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>

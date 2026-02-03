@@ -1,0 +1,1456 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Andrea Diamantini">
+      
+      
+      
+        <link rel="prev" href="../10_hw/">
+      
+      
+        <link rel="next" href="../../libreoffice/00_intro/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Software - Informatics Literacy Course</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#il-software" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href="../.." title="Informatics Literacy Course" class="md-header__button md-logo" aria-label="Informatics Literacy Course" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Informatics Literacy Course
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Software
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="pink"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../basics/00_intro/" class="md-tabs__link">
+          
+  
+  Basics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../00_intro/" class="md-tabs__link">
+          
+  
+  Hardware & Software
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../libreoffice/00_intro/" class="md-tabs__link">
+          
+  
+  Libreoffice
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../web/00_intro/" class="md-tabs__link">
+          
+  
+  Web
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Informatics Literacy Course" class="md-nav__button md-logo" aria-label="Informatics Literacy Course" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Informatics Literacy Course
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basics/00_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basics/01_storia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basics/05_info_binarie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rappresentare le Informazioni
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Hardware & Software
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Hardware & Software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_hw/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hardware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Software
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Software
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#i-sistemi-operativi" class="md-nav__link">
+    <span class="md-ellipsis">
+      I sistemi operativi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="I sistemi operativi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows 10
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mac-os" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mac OS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distribuzioni-gnulinux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distribuzioni GNU/Linux
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistemi-bsd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sistemi BSD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#android" class="md-nav__link">
+    <span class="md-ellipsis">
+      Android
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ios" class="md-nav__link">
+    <span class="md-ellipsis">
+      iOS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compiti-di-un-os" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compiti di un OS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#licenze-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      Licenze Software
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Licenze Software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#licenze-per-il-software-proprietario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Licenze per il software proprietario
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#licenze-per-il-software-libero" class="md-nav__link">
+    <span class="md-ellipsis">
+      Licenze per il software libero
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-applicativi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software applicativi
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Libreoffice
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Libreoffice
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libreoffice/00_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libreoffice/51_writer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Writer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libreoffice/52_calc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Calc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Web
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web/00_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web/10_html5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web/20_css/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web/30_js/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="il-software">Il software</h1>
+<p>Software e' un termine generico che definisce programmi e procedure
+utilizzati per far eseguire ad un dispositivo elettronico un determinato
+compito. Il termine è un neologismo del ventesimo secolo inventato in
+contrapposizione al termine "hardware", dunque un componente (-ware)
+"soft", mordibo, leggero.</p>
+<p>I primi "software" possono essere datati 1941, quando il sistema di
+controspionaggio inglese, capitanato da Alan Turing, lavorava alla
+decriptazione dei messaggi inviati dall'esercito tedesco con la macchina
+Enigma. Le istruzioni di decriptazione erano scritti su carta solubile,
+in modo da poter essere distrutti semplicemente in pochi secondi
+("software").</p>
+<p>Nel mondo di oggi, una moltitudine di oggetti viene controllata da esso:
+computer, tablet, smartphones, automobili, TV, lavatrici ed elettrodomestici in genere.</p>
+<p>È possibile classificare il software in due grandi macro-aree:</p>
+<ul>
+<li>
+<p><strong>software di base</strong>, indispensabile al funzionamento del computer.
+    È ciò che fa la differenza fra avere una scatola di ferro e plastica
+    fra le mani e quello che noi chiamiamo "computer". Viene solitamente
+    identificato con il sistema operativo;</p>
+</li>
+<li>
+<p><strong>software applicativo</strong>. Comprende i programmi che il programmatore
+    realizza utilizzando le possibilità che il sistema operativo offre.
+    Tutti i programmi che solitamente utilizziamo fanno parte di questa
+    categoria.</p>
+</li>
+</ul>
+<h2 id="i-sistemi-operativi">I sistemi operativi</h2>
+<p><img alt="Sistemi Operativi" src="../os.jpg" style="float:left;margin-right:20px" /></p>
+<p>I sistemi operativi (spesso abbreviato con OS) sono un insieme di
+applicazioni di base (vedi sopra) che da un lato si occupano di gestire
+l'hardware su cui sono installati, dall'altro rendono disponibili ai
+software applicativi le risorse di cui hanno bisogno per eseguire le
+proprie operazioni.</p>
+<p>I sistemi operativi sono installati su tutti i dispositivi elettronici avanzati (PC desktop, notebook, tablet,
+smartphones, console per videogiochi, lettore mp3...) e sono dunque
+grossolanamente classificabili in base al dispositivo a cui sono
+rivolti.</p>
+<p>Vediamo una carrellata dei sistemi operativi più famosi: per piattaforma
+desktop, troviamo la famiglia di sistemi operativi <strong><em>Microsoft Windows</em></strong>, oppure il sistema operativi <strong><em>Mac OS di Apple</em></strong> e le
+innumerevoli distribuzioni <strong><em>GNU/Linux</em></strong>.</p>
+<p>Per dispositivi mobili, dominano la scena i sistemi operativi
+<strong><em>Android</em></strong>, della "<em>Open Handset Alliance</em>" capitanata da Google e
+<strong><em>iOS</em></strong> di Apple.</p>
+<div class="admonition tip">
+<p class="admonition-title">Domanda</p>
+<p>Quanti sistemi operativi conosci? Quanti ne esisteranno secondo te?
+Proviamo a cercare su Internet informazioni sui sistemi operativi. Ci
+interessa sapere:</p>
+<ul>
+<li>il loro nome</li>
+<li>che simbolo hanno</li>
+<li>se sono per desktop, mobile o dispositivi particolari</li>
+<li>vedere uno screenshot di come sono fatti</li>
+</ul>
+<p>Proviamo a fare una piccola ricerca su Internet e a riempire un foglio
+di Libreoffice Writer con queste informazioni. Dieci minuti di tempo...</p>
+</div>
+<p>Vediamo qui di seguito una carrellata dei sistemi operativi più
+conosciuti, almeno ad oggi (Settembre 2017).</p>
+<h3 id="windows-10">Windows 10</h3>
+<p><img alt="&quot;Windows 10&quot;" src="../windows10.png" /></p>
+<p>Windows 10 è il decimo OS prodotto da Microsoft e a sentire le loro dichiarazioni, 
+doveva anche essere l'ultimo...</p>
+<p>Nella strategia di Microsoft, questo doveva essere il sistema operativo
+in cui far convergere tutti i dispositivi: desktop, tablet, smartphone,
+console.</p>
+<p>Invece...</p>
+<h3 id="mac-os">Mac OS</h3>
+<p><img alt="&quot;Mac OS&quot;" src="../macos.jpg" /></p>
+<p>MacOS è il nome dato al sistema operativo desktop prodotto da Apple.</p>
+<p>Sebbene Apple sia una delle aziende pioniere della storia
+dell'informatica, questo OS è stato riscritto da zero solo nel 2001,
+abbracciando una derivata UNIX-like della famiglia BSD e mantenendo
+l'aspetto grafico originario.</p>
+<p>Una delle caratteristiche principali di macOS è che è progettato
+specificatamente per l'hardware dei (pochi) dispositivi che Apple
+produce.</p>
+<h3 id="distribuzioni-gnulinux">Distribuzioni GNU/Linux</h3>
+<p><img alt="&quot;Ubuntu&quot;" src="../ubuntu.jpg" /></p>
+<p>Una distribuzione Linux è una raccolta di software
+tipicamente libero e opensource basata sul kernel GNU/Linux e l'X Window
+System.</p>
+<p>In generale una distribuzione Linux rappresenta un sistema operativo
+UNIX-like, formato tramite la raccolta e la libera distribuzione di
+software libero selezionato.</p>
+<p>Ma chi fa questa selezione? Chi distribuisce questa raccolta di
+software?</p>
+<p>Esistono tipicamente due categorie di distribuzioni: quelle implementate
+da aziende, quali Red Hat, Novell, Mandriva, Canonical... che realizzano
+la loro distribuzione per uno scopo ben preciso oppure quelle divulgate
+da comunità libere di hobbisti, quali Debian, Slackware, Gentoo, etc...</p>
+<h3 id="sistemi-bsd">Sistemi BSD</h3>
+<p>I sistemi operativi della Berkeley Software Distribution sono una
+variante originale del sistema UNIX sviluppata (indovina un po'...)
+presso l'università di Berkeley della California.</p>
+<p>Il sistema operativo BSD non è più utilizzato e sviluppato, ma da esso è
+partita una famiglia di sistemi operativi liberi molto diffusi,
+soprattutto in ambito mainframe e network management, fra cui vale la
+pena ricordare:</p>
+<ul>
+<li><a href="https://www.freebsd.org/">FreeBSD</a>, su cui si basa il
+  firewall/proxy del liceo</li>
+<li><a href="http://www.freenas.org/">FreeNAS</a>, utilizzato su dispositivi di
+  archiviazione di rete</li>
+<li><a href="http://www.puredarwin.org/">DarwinOS</a>, sistema libero sovvenzionato
+  da Apple, su cui si basa Mac OS</li>
+<li><a href="https://www.playstation.com/en-gb/get-help/ps4-system-software/">Orbis OS</a>,
+  il sistema operativo della PlayStation</li>
+</ul>
+<p>Valeva la pena citarli, vero??</p>
+<p>PS: L'ho detto che anche il servizio <a href="https://openconnect.netflix.com/en/appliances/#software">Netflix</a> si
+basa su FreeBSD? E che anche i server <a href="https://freebsdfoundation.org/testimonial/whatsapp/">Whatsapp</a> lo
+stesso?</p>
+<h3 id="android">Android</h3>
+<p><img alt="" src="../android.png" /></p>
+<p>Android è un sistema operativo per dispositivi mobili
+derivato da Linux (praticamente è come un'altra distribuzione Linux) e
+sviluppato principalmente da Google e da tutta la <a href="https://it.wikipedia.org/wiki/Open_Handset_Alliance">Open Handset
+Alliance</a>.</p>
+<p>Originariamente progettato per smartphone e tablet, possiede interfacce
+utente specializzate per vari devices quali automobili (Google Auto),
+occhiali (Google Glass), orologi da polso (Android Wear) e TV (Android
+TV).</p>
+<p>Ad oggi (Settembre 2017) Android è il sistema operativo mobile più
+diffuso al mondo con oltre il 60% del mercato.</p>
+<h3 id="ios">iOS</h3>
+<p><img alt="" src="../iOS.png" /></p>
+<p>iOS è un sistema operativo sviluppato da Apple per i
+dispositivi che lei stessa produce: iphone, ipad, ipod.</p>
+<p>Come macOS, è un sistema operativo derivato da DarwinOS, ma ridisegnato
+per adeguarlo ai particolari dispositivi che andrà a gestire.</p>
+<p>Questa caratterizzazione, soprattutto nelle librerie grafiche, rende le
+applicazioni per i due OS prodotti da Apple incompatibili fra di loro.</p>
+<p>A settembre 2017 iOS ha superato il 30% di presenza nel mercato mobile
+mondiale.</p>
+<div class="admonition note">
+<p class="admonition-title">Lavoro di gruppo sui Sistemi Operativi</p>
+<p>Il prof ha una proposta per voi...</p>
+</div>
+<h2 id="compiti-di-un-os">Compiti di un OS</h2>
+<p>Un sistema operativo è un insieme di software di base che realizza i
+compiti di gestione del dispositivo e dell'interfacciamento utente.</p>
+<p>In particolare esso si occupa:</p>
+<ul>
+<li>della gestione dell'<strong><em>hardware</em></strong> di cui è composto il dispositivo;</li>
+<li>dell'esecuzione dei <strong><em>programmi</em></strong>, con particolare attenzione alla
+    distribuzione delle <strong><em>risorse</em></strong> (CPU e memoria di base) ai
+    <strong><em>processi</em></strong> che ne richiedono l'utilizzo;</li>
+<li>alla gestione dell'<strong><em>interfaccia utente</em></strong>, in modo che
+    quest'ultimo possa impartire al sistema i suoi comandi e
+    visualizzare ciò che ne consegue;</li>
+<li>alla gestione del <strong><em>file system</em></strong>, tramite il quale i dati possono
+    essere memorizzati e acceduti dal sistema.</li>
+</ul>
+<p>Mi rendo conto che questa descrizione è un po' stringata e "criptica".
+Provo a spiegare quali sono i compiti principali di un OS, partendo
+dalle parole chiave che trovate sottolineate nel testo.</p>
+<hr />
+<p><strong>Hardware</strong></p>
+<p>Se siete arrivati a leggere fino a qua, cosa è l'hardware dovreste già
+saperlo... passiamo veloci alla prossima definizione.</p>
+<hr />
+<p><strong>Programmi e Processi</strong></p>
+<p>Programma è sinonimo di software, ovvero un file memorizzato nel
+filesystem che è eseguibile direttamente dal sistema operativo. Per
+questo motivo i programmi vengono detti anche "eseguibili" e su Windows
+sono i file con estensione ".exe".</p>
+<p>I processi sono i programmi attualmente in esecuzione. Proviamo a
+spiegare la differenza con un esempio: sul mio computer ho installato
+una copia di MS Word, che è ovviamente un programma. Se clicco su 2 file
+.doc e si aprono 2 finestre di Word per visualizzare e modificare questi
+file, avrò in esecuzione 2 processi dello stesso programma. Il programma
+è uno (MS Word), ma i processi per questo esempio sono 2. Ovviamente le
+risorse (CPU e memoria di base) vanno ai processi, NON ai programmi!</p>
+<hr />
+<p><strong>Risorse</strong></p>
+<p>Una risorsa è un componente fisico o virtuale che offre una determinata
+funzionalità e di cui si ha una disponibilità limitata. <br>
+Nei nostri esempi, le risorse sono le memorie di base, che purtroppo
+sono sempre limitate e la CPU che è tipicamente una!!!
+Le risorse vanno distribuite fra tutti i processi che le richiedono: più
+OS realizza bene questo compito e più il sistema appare "scattante" e
+"responsivo". Chiaro?</p>
+<hr />
+<p><strong>File system</strong></p>
+<p>Un file system è un meccanismo di organizzazione dei dati che
+costituiscono i file all'interno dei dispositivi di archiviazione (le
+memorie di massa). Tramite il filesystem diventano possibili tutte le
+operazioni sui file, quali lettura, scrittura, modifica, organizzazione
+gerarchica, navigazione e accesso.</p>
+<p>Capite bene che un sistema operativo che non gestisca un filesystem è
+incredibilmente limitato nelle sue funzionalità.</p>
+<hr />
+<p>Spiegati i termini, spero sia più facile capire quelli che sono i
+compiti di base di un OS. Allora vi chiedo... tornate su e
+rileggeteli!!!</p>
+<p>Poi andiamo avanti.</p>
+<h2 id="licenze-software">Licenze Software</h2>
+<p>In ambito informatico, una licenza è il contratto tramite il quale chi
+produce il software determina le condizioni di distribuzione e di
+utilizzo dello stesso per coloro che vogliono servirsene.</p>
+<p>Ogni software ha sempre una propria licenza e quindi per ogni software
+che si utilizza sul PC, sullo smartphone, sul tablet o in rete
+bisognerebbe conoscere sempre le limitazioni che il produttore del
+software, il quale agli occhi della legge rimane l'unico proprietario,
+impone.</p>
+<p>Esistono varie tipologie di licenze software, classificabili
+genericamente nelle due macro-categorie:</p>
+<ul>
+<li>licenze per il software proprietario</li>
+<li>licenze per il software libero</li>
+</ul>
+<h3 id="licenze-per-il-software-proprietario">Licenze per il software proprietario</h3>
+<p>Viene definito "<em>proprietario</em>" il software prodotto da aziende per
+(evidenti) motivi di lucro. Tipicamente (ma non sempre) questa tipologia
+di software coincide con il software "closed source", ovvero quello per
+cui il codice sorgente non viene rilasciato al pubblico e quindi se ne
+rende impossibile ogni tipo di studio, modifica o ridistribuzione.</p>
+<p>Le licenze disponibili in questa categorie sono solitamente di 3 tipi:</p>
+<hr />
+<p><strong>EULA</strong></p>
+<p>L'<strong><em>End User License Agreement</em></strong> è un contratto che descrive
+in quale modo il produttore mantenga i "diritti" sul software che ha
+creato e non lo "venda" all'utente finale, ma che gli permetta di
+utilizzarlo. La non accettazione implica l'impossibilità per
+quest'ultimo perfino di installare il programma.</p>
+<hr />
+<p><strong>Freeware</strong></p>
+<p>Le licenze di questo tipo concedono gratuitamente l'utilizzo e la
+ridistribuzione del software all'utente finale. Le aziende che scelgono
+questo tipo di licenza lo fanno chiaramente per favorire la
+distribuzione di massa del software stesso e rientrano degli utili
+chiedendo delle donazioni agli utenti che hanno apprezzato il software o
+utilizzandolo come veicolo pubblicitario per terze parti (ad-ware).</p>
+<hr />
+<p><strong>Shareware</strong></p>
+<p>Le licenze di questo tipo permettono all'utente finale di scaricare
+semplicemente e gratuitamente una versione di prova o con funzionalità
+limitate del software (trial), chiedendo dopo poco tempo il pagamento di
+una somma (riscatto) per continuare ad usufruire dello stesso.</p>
+<h3 id="licenze-per-il-software-libero">Licenze per il software libero</h3>
+<p>Viene definito "<em>libero</em>" quel software pubblicato tramite una licenza che
+ne permetta l'utilizzo, l'analisi del codice, la modifica e la
+redistribuzione (anche modificato, evidenziando le proprie modifiche).</p>
+<p>Si intende chiaramente che software libero implichi software "open
+source", ovvero quel tipo di software che oltre all'eseguibile, ovvero
+il programma da installare e utilizzare, distribuisce anche i codici
+sorgenti che compilati generano quel programma.</p>
+<p>Il software libero è più di ogni altra cosa una filosofia di vita, che
+secondo me i vostri figli se faranno il liceo si ritroveranno tra gli
+argomenti di filosofia dell'ultimo anno... per quanto vi riguarda, se
+l'argomento vi interessa, vi suggerisco due letture brevi sull'argomento
+tratte da Wikipedia:</p>
+<ul>
+<li><a href="https://it.wikipedia.org/wiki/Software_libero">Il software libero</a></li>
+<li><a href="https://it.wikipedia.org/wiki/Storia_del_software_libero">Storia del software libero</a></li>
+<li><a href="https://it.wikipedia.org/wiki/Free_and_Open_Source_Software">La Free Software Foundation</a></li>
+</ul>
+<p>Per quanto riguarda le licenze più comuni di software libero esse sono:</p>
+<hr />
+<p><strong>GPL</strong></p>
+<p>La <strong><em>General Public License</em></strong> è la licenza di base del
+software libero, scritta dalla Free Software Foundation e si basa sulle
+cosiddette "4 libertà fondamentali del software":</p>
+<ul>
+<li><strong>Libertà 0</strong>: Libertà di eseguire il programma per qualunque scopo</li>
+<li><strong>Libertà 1</strong>: Libertà di studiare il codice del programma e modificarlo</li>
+<li><strong>Libertà 2</strong>: Libertà di redistribuire copie del software a chiunque</li>
+<li><strong>Libertà 3</strong>: Libertà di migliorare il programma e di <strong><em>distribuirne pubblicamente i miglioramenti</em></strong></li>
+</ul>
+<hr />
+<p><strong>Licenze BSD</strong></p>
+<p>Le licenze BSD riflettono al meglio il concetto di <em>free</em> in quanto
+gratuito. Esse garantiscono che il codice rilasciato con questa licenza
+sia attribuito al suo autore e possa essere studiato, ridistribuito e
+modificato, ma non obbligano nessuno a ridistribuire pubblicamente le
+modifiche che si fanno ad esso.</p>
+<p>In questo modo gli autori intendono considerare il codice rilasciato con
+licenza BSD come un <strong><em>dono</em></strong> che l'autore fa al mondo, senza richiede
+nulla in cambio anche se qualcuno utilizza il suo codice per scopi di
+lucro.</p>
+<p>I sistemi operativi della famiglia BSD sono tutti basati su questa
+licenza. I sistemi operativi di Apple sono tutti basati su BSD grazie a
+questa particolare licenza con cui essi (i sistemi BSD) sono rilasciati.</p>
+<div class="admonition tip">
+<p class="admonition-title">Le aziende e il software opensource</p>
+<p>Molto del software che utilizziamo quotidianamente (ad esempio, la PlayStation,
+Whatsapp, Netflix) sono basati su BSD.<br>
+Infatti, la licenza BSD permette a chiunque di costruire il proprio servizio a pagamento 
+sopra un sistema operativo BSD <strong>senza dover condividere pubblicamente il proprio codice 
+come sarebbe stato obbligatorio in caso di progetto derivato da uno con licenza GPL</strong>.</p>
+</div>
+<hr />
+<p><strong>Creative Commons</strong></p>
+<p>Le CC sono licenze di diritto d'autore (quindi applicabili ad ogni opera
+dell'ingegno) organizzate secondo una schema di concessione in cui
+l'autore decide quale libertà concedere a chi vuole usufruire
+dell'opera.</p>
+<p>L'unica libertà "<em>obbligatoria</em>" da concedere è il diritto di copiare e
+distribuzione l'opera (<em>share</em>), mentre l'unico diritto obbligatorio che
+si ottiene con questa licenza è l'attribuzione all'autore.</p>
+<p>Le altre possibilità sono regolate secondo il seguente schema (copiato
+da Wikipedia)</p>
+<p><img alt="Creative Commons License" src="../CC.png" /></p>
+<p>Combinando opportunamente alcune di queste clausole si ottengono le
+licenze CC. Date un occhio al fondo pagina delle dispense del prof per
+vederne un esempio...</p>
+<h2 id="software-applicativi">Software applicativi</h2>
+<p>I software applicativi sono quei software utilizzati per specifiche
+operazioni, quali la scrittura di un documento, un calcolo, un disegno,
+la navigazione su internet, la visione di un contenuto audio o video,
+ecc.</p>
+<p>Ognuno di questi <strong><em>software</em></strong> dunque può essere catalogato per il
+<strong><em>tipo di funzione</em></strong> che svolge. Per svolgere la loro funzione
+inoltre, i software hanno bisogno di interagire con i <strong><em>dati</em></strong> che gli
+<strong><em>utenti</em></strong> alla fine vogliono visualizzare. Altrimenti perché usare
+quel software?</p>
+<p><img alt="" src="../sw_data_users.png" /></p>
+<p>Cerchiamo allora di dare una prima categorizzazione al software, ponendo
+attenzione anche al formato di dati che esso è in grado di trattare.</p>
+<div class="admonition note">
+<p class="admonition-title">Lavoro di gruppo sul Software</p>
+<p>Ne arriva un'altra...</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Torna su
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Piede" >
+        
+          
+          <a href="../10_hw/" class="md-footer__link md-footer__link--prev" aria-label="Precedente: Hardware">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Precedente
+              </span>
+              <div class="md-ellipsis">
+                Hardware
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../libreoffice/00_intro/" class="md-footer__link md-footer__link--next" aria-label="Successivo: Introduzione">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Successivo
+              </span>
+              <div class="md-ellipsis">
+                Introduzione
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Andrea Diamantini (c) 2022-doomsday<br> <a href="#__consent">Change Cookie Settings</a><br> This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+
+  
+
+<h4>Consenso all'uso dei Cookie(s)</h4>
+<p>Questo sito memorizza alcuni cookies solo per riconoscere un visitatore  che non è alla sua prima visita e alcune preferenze, come il tema di visualizzazione della pagina selezionato.<br> Se non acconsenti, questa finestra riapparirà ogni volta che riapri il sito.<br> Se vuoi cambiare le tue scelte, in fondo alla pagina trovi un link per modificarle ;)
+</p>
+<input class="md-toggle" type="checkbox" id="__settings" checked>
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accetta</button>
+    
+    
+    
+  
+    
+    
+      <button type="reset" class="md-button md-button--primary">Rifiuta</button>
+    
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.tabs", "navigation.sections", "navigation.top", "toc.integrate", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>

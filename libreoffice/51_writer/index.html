@@ -1,0 +1,1378 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Andrea Diamantini">
+      
+      
+      
+        <link rel="prev" href="../00_intro/">
+      
+      
+        <link rel="next" href="../52_calc/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Writer - Informatics Literacy Course</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#libreoffice-writer-un-editor-di-documenti" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href="../.." title="Informatics Literacy Course" class="md-header__button md-logo" aria-label="Informatics Literacy Course" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Informatics Literacy Course
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Writer
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="pink"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../basics/00_intro/" class="md-tabs__link">
+          
+  
+  Basics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../hwsw/00_intro/" class="md-tabs__link">
+          
+  
+  Hardware & Software
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../00_intro/" class="md-tabs__link">
+          
+  
+  Libreoffice
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../web/00_intro/" class="md-tabs__link">
+          
+  
+  Web
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Informatics Literacy Course" class="md-nav__button md-logo" aria-label="Informatics Literacy Course" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Informatics Literacy Course
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basics/00_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basics/01_storia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basics/05_info_binarie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rappresentare le Informazioni
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hardware & Software
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Hardware & Software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hwsw/00_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hwsw/10_hw/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hardware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hwsw/20_sw/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Libreoffice
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Libreoffice
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Writer
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Writer
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#operazioni-di-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operazioni di base
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stili-per-il-testo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stili per il testo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intestazioni-e-pie-di-pagina" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intestazioni e piè di pagina
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comandi-di-campo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comandi di campo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indice-generale-e-indice-analitico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Indice Generale e Indice Analitico
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inserimento-oggetti-speciali" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inserimento oggetti speciali
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inserimento oggetti speciali">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collegamenti" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collegamenti
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabelle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabelle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#immagini" class="md-nav__link">
+    <span class="md-ellipsis">
+      Immagini
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fontwork" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fontwork
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esercizi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizi
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../52_calc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Calc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Web
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web/00_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web/10_html5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web/20_css/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web/30_js/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="libreoffice-writer-un-editor-di-documenti">Libreoffice Writer, un Editor di Documenti</h1>
+<p>Un editor di documenti è un software per la composizione di testi in
+formato elettronico.</p>
+<p>Mentre alcuni editor semplici, come il Blocco Note di Windows,
+permettono di scrivere solo testo puro, senza alcun tipo di
+formattazione, gli editor di documenti permettono di inserire in un
+documento, oltre ovviamente al testo, una formattazione completa e
+differenziata dello stesso, come di inserire immagini, link e altri
+contenuti per arricchire il documento stesso.</p>
+<p>Esempi di editor di documenti sono i comunissimi Microsoft Word e
+LibreOffice Writer. Noi qui (lo avrete capito) approcciamo un po'
+l'editor LibreOffice Writer.</p>
+<p><img alt="Editor di documenti" src="../images/doc_editor.png" /></p>
+<h2 id="operazioni-di-base">Operazioni di base</h2>
+<p>Non starò qui a spiegare come si apre, si crea, si salva e si chiude un
+documento: sono operazioni basilari che dovremmo già aver recepito
+semplicemente usando qualsiasi tipo di software.</p>
+<p>Vorrei solo far notare che Writer, oltre alla possibilità banale di
+partire da un documento vuoto, ha la possibilità di:</p>
+<ul>
+<li>creare lettere, fax e altro tramite una procedura guidata,</li>
+</ul>
+<p><img alt="procedure guidate" src="../images/procedure_guidate.jpg" /></p>
+<ul>
+<li>partire da un modello di base salvato nel PC,</li>
+</ul>
+<p><img alt="modelli" src="../images/modelli.jpg" /></p>
+<ul>
+<li>scaricare un modello gratuito a piacimento dal sito <a target="_blank" href="https://extensions.libreoffice.org/templates">https://extensions.libreoffice.org/templates</a>.</li>
+</ul>
+<p>Basta provare ;)</p>
+<h2 id="stili-per-il-testo">Stili per il testo</h2>
+<p>Questo capitolo è il più complicato da spiegare di tutto il corso su
+Writer, perché fa notare delle ovvietà che ai più non sono affatto
+ovvie. Del resto... chi ha mai studiato come si usa un editor di testo?
+Cosa ci vuole... basta aprirlo, scrivere e ricordarsi di salvare alla
+fine!</p>
+<p>Se vuoi scrivere un titolo bello grosso, come quello <strong>Stili</strong> su in
+alto, basta modificarne il font (il tipo di carattere), la dimensione e
+metterlo grassetto, giusto?!</p>
+<p><strong>No!</strong></p>
+<p>Per diventare un titolo bisogna modificarne lo stile! Guardate la figura sotto (è orribile, lo so).</p>
+<p><img alt="stili" src="../images/stili.jpg" /></p>
+<p>Per ottenere un titolo, bisogna modificarne lo stile da "Corpo del
+testo" o "Stile predefinito" in "Titolo 1" oppure "Titolo 2"... non
+basta modificarne font e dimensione!</p>
+<p>Ogni titolo del nostro testo deve avere applicato uno degli stile titolo
+disponibili. Così i paragrafi che compongono un capitolo devono essere
+tutti di stile "Corpo del testo" oppure uno stile derivato da questi.</p>
+<div class="admonition note">
+<p class="admonition-title">Il menù per gli stili</p>
+<p>A un certo punto In Writer è comparso addirittura un <strong>menù dedicato agli stili</strong>
+per permettere agli utenti di gestire al meglio questo importantissimo
+aspetto della formattazione dei documenti.</p>
+</div>
+<p>Esagerando un po', si potrebbe dire che, deciso <em>quello che si vuole
+scrivere</em>, prima di scriverlo nel documento, bisognerebbe <em>decidere come
+scriverlo</em>, creando e modificando degli stili adatti al layout che
+vogliamo creare. Infine si passa alla digitazione vera e propria del
+testo con la semplice <em>applicazione dello stile appropriato</em> sul testo
+scritto.</p>
+<p>Non è semplice, me ne rendo conto. Ma è il modo in cui un utente di buon
+livello dovrebbe usare un editor avanzato come Writer o Word per la
+stesura di qualsiasi documento non banale.</p>
+<p>Come si crea uno stile, si modifica e si applica ad un documento lo
+vediamo a lezione.</p>
+<p>Gli stili si applicano ad un contesto. E i contesti in un editor di
+documenti sono solitamente tre:</p>
+<ol>
+<li>Carattere</li>
+<li>Paragrafo</li>
+<li>Pagina</li>
+</ol>
+<hr />
+<p><strong>Stili per carattere</strong></p>
+<p>Come si fa a scrivere una parola in <strong>grassetto</strong> <em>sottolineato</em>?
+Semplice! Si evidenzia la parola e si clicca su uno dei pulsanti sopra.
+Si possono anche sovrapporre più modifiche, ad esempio:</p>
+<p>Questo testo viene scritto in font: "Dejavu Sans", dimensione 14,
+corsivo e sottolineato. E la parola <del>testo</del> è barrata.</p>
+<p>Quando si seleziona una parola o più, lo stile che vi si applica viene
+applicato per carattere: ogni carattere della selezione viene modificato
+secondo quanto stabilito, ogni carattere non selezionato <strong><em>non</em></strong> viene
+modificato affatto (e quindi mantiene lo stile originale).</p>
+<p>E se volessimo avere il controllo di tutti gli stili applicabili ad un
+carattere???</p>
+<p>Seleziona una parola qualsiasi, poi apri il menù FORMATO e scorri fino a
+CARATTERE: lì trovi tutti gli stili che Writer può applicare ad un
+carattere.</p>
+<hr />
+<p><strong>Stili per paragrafo</strong></p>
+<p>Uno stile viene applicato ad un paragrafo quando tutte le parole che
+fanno parte di quel paragrafo ottengono immediatamente lo stile dello
+stesso. Qui stiamo dando per scontato che voi sappiate cosa sia un
+paragrafo... beh... per Writer un paragrafo è quella porzione di
+informazioni (testo, immagini, tabelle, etc...) compresa fra 2 "invio".</p>
+<p>Ognuno degli stili predefiniti come "Titolo 1", "Corpo del testo",
+etc... sono stili per paragrafo, in questa sua accezione più "estesa".</p>
+<p>Se mettete il cursore su un paragrafo, anche senza evidenziare niente, e
+poi aprite il menù FORMATO e scorrete fino a PARAGRAFO vedrete che ogni
+modifica che fate lì viene applicata immediatamente a TUTTO il
+paragrafo!</p>
+<hr />
+<p><strong>Stili per pagina</strong></p>
+<p>Ormai avrete capito che per modificare lo stile della pagina basta
+andare sul menù FORMATO e selezionare PAGINA. Lì trovate tutti gli stili
+che si possono applicare alle pagine del vostro documento, tra cui
+l'intestazione (di pagina) e il piè di pagina, che vedremo fra poco.</p>
+<p>Ricordate solo che <strong><em>ogni modifica allo stile di pagina si applica</em></strong>
+non alla pagina corrente, ma <strong><em>a tutte le pagine del documento</em></strong>!</p>
+<h2 id="intestazioni-e-pie-di-pagina">Intestazioni e piè di pagina</h2>
+<div class="admonition tip">
+<p class="admonition-title">In Inglese</p>
+<p>L'intestazione di pagina si chiama <strong><em>header</em></strong>,
+Il piè di pagina si definisce <strong><em>footer</em></strong>.<br>
+Continuando l'analogia, il corpo della pagina viene chiamato <strong><em>body</em></strong></p>
+</div>
+<p><img alt="Intestazioni e piè di pagina" src="../images/header_footer.jpg" style="float:left;margin-right:20px" /></p>
+<p>L'intestazione e il piè di pagina sono due aree <em>separate</em> del foglio che
+si trovano rispettivamente sopra e sotto il corpo centrale della pagina.</p>
+<p>Queste due aree appartengono allo stile della pagina e saranno quindi
+ripetute costantemente in tutte le pagine del documento.</p>
+<p>Per inserirle in un documento, seleziona, dal menù <code>INSERISCI</code>, la voce
+<code>INTESTAZIONE E PIE' DI PAGINA</code>; poi cliccare dentro ognuna di esse per
+inserire informazioni che saranno ripetute in tutto il documento.</p>
+<p>Queste zone particolari di ogni pagina sono solitamente costellate di 
+informazioni generiche be definite (ad esempio: il titolo del documento, l'autore,
+il titolo del capitolo, etc...) oppure informazioni che vengono calcolate in tempo reale 
+(ad esempio: la data di ultima modifica, il numero della pagina, il totale delle pagine, etc...).</p>
+<p>Come si gestiscono tutte queste informazioni automatiche è oggetto del prossimo argmento.</p>
+<h2 id="comandi-di-campo">Comandi di campo</h2>
+<p>Un comando di campo è una istruzione che impone a Writer di desumere
+un'informazione dal documento stesso e di visualizzarla nel punto ove il
+comando viene applicato. Per inserirla nel documento (di solito si usano
+nelle intestazioni e nei piè di pagina) selezionare il punto prescelto,
+poi dal menù <code>INSERISCI</code> selezionare <code>COMANDO DI CAMPO</code>.</p>
+<p>Sono disponibili i seguenti comandi di campo:</p>
+<ul>
+<li>Numero di pagina</li>
+<li>Conteggio pagine</li>
+<li>Data</li>
+<li>Orario</li>
+<li>Titolo</li>
+<li>Primo autore</li>
+<li>Oggetto</li>
+</ul>
+<h2 id="indice-generale-e-indice-analitico">Indice Generale e Indice Analitico</h2>
+<p>Un <strong>indice generale</strong> è un elenco di tutti i titoli presenti nel nostro
+documento, in ordine di apparizione e con il numero di pagina vicino.
+Writer crea l'indice inserendo un collegamento in ognuno dei titoli, in
+modo tale che "cliccandoci" si possa raggiungere il capitolo
+corrispondente.</p>
+<p>Un <strong>indice analitico</strong> è un elenco strutturato e ordinato di tutti i
+capitoli e gli oggetti (immagini, tabelle, note, etc...) presenti nel
+documento.</p>
+<p>Una <strong>bibliografia</strong> è un elenco di testi, solitamente con un riferimento o
+un link per ognuno, ordinato secondo la volontà dell'autore. Solitamente
+la bibliografia di un documento contiene tutte le sue fonti.</p>
+<blockquote>
+<p>Nella nostra trattazione ci occuperemo semplicemente dell'indice generale. </p>
+</blockquote>
+<p>Per inserire un indice generale nel nostro documento, dal menù <code>INSERISCI</code>, aprire
+il sottomenù <code>INDICE GENERALE E INDICE ANALITICO</code>, poi selezionare la voce
+<code>INDICE GENERALE, ANALITICO O BIBLIOGRAFIA</code>.</p>
+<p>Dall'interfaccia che appare, selezionare "Indice Generale" e premere invio. 
+L'indice generale viene creato automaticamente nella posizione selezionata controllando tutti i titoli presenti nel proprio documento.</p>
+<div class="admonition warning">
+<p class="admonition-title">Attenzione!</p>
+<p>Dopo aver creato l'indice generale, questo non si aggiorna automaticamente!!</p>
+<p>Dopo aver aggiunto pagine, titoli e/o contenuti devi ritornare sull'indice generale,
+cliccare col tasto destro su di esso e dal menù contestuale selezionare <code>AGGIORNA</code>!</p>
+<p><strong>Ricordatelo!</strong></p>
+</div>
+<p>Se modifichiamo gli stili dei titoli questi non saranno inseriti
+automaticamente nell'indice, ma dovranno essere inseriti
+dall'interfaccia grafica selezionandone il nome ed indicando il livello</p>
+<p><img alt="indice generale o analitico" src="../images/indice.jpg" /></p>
+<p>Dalla finestra di inserimento indice, mettete la spunta su "stili
+aggiuntivi", poi dal pulsante "Assegna Stili" andate ad indicare il
+livello dello stile che avete creato: 1 se volete che il vostro stile
+sia un Titolo1, 2 se volete un Titolo2, etc...</p>
+<h2 id="inserimento-oggetti-speciali">Inserimento oggetti speciali</h2>
+<p>In un documento LibreOffice si possono inserire vari tipi di oggetti
+speciali: immagini, video, grafici business, formule matematiche, forme
+geometriche e oggetti grafici in genere, cornici, fontwork, etc...</p>
+<p>Vediamo l'inserimento di alcuni degli oggetti più comuni</p>
+<h3 id="collegamenti">Collegamenti</h3>
+<p>I collegamenti ipertestuali (i link) si possono assegnare su LibreOffice
+ad un qualunque oggetto (un testo, una immagine, etc...). Per inserire
+un collegamento, selezionate prima l'oggetto e poi dal menù INSERISCI
+scegliete COLLEGAMENTO!</p>
+<p>A quel punto dovete solo inserire l'URL di destinazione, ovvero
+l'indirizzo del sito che volete aprire quando si clicca l'oggetto!</p>
+<div class="admonition warning">
+<p class="admonition-title">Attenzione!!!</p>
+<p>In Writer, click e doppio click selezionano un oggetto! </p>
+<p>Per aprire un collegamento fate click su di esso tenendo premuto ++CTRL++ !!!</p>
+</div>
+<h3 id="tabelle">Tabelle</h3>
+<p>Le tabelle sono una caratteristica peculiare dei documenti con
+formattazione: sono molto utili e permettono di organizzare le
+informazioni con semplicità.</p>
+<p>Writer possiede un menù e una toolbar dedicati espressamente alle
+tabelle. Il menù è qui in alto mentre la toolbar si attiva
+automaticamente quando si lavora su una tabella...</p>
+<p>Tra gli esercizi ce ne sono alcuni espressamente dedicati a lavorare con
+le tabelle.</p>
+<h3 id="immagini">Immagini</h3>
+<p>Inserire un'immagine è molto semplice: dal menù INSERISCI, selezionare
+IMMAGINE, da qui selezionare il file e premere invio.</p>
+<p>Per permettere all'immagine di posizionarsi correttamente secondo il
+nostro volere bisogna considerare alcune cose:</p>
+<table>
+<thead>
+<tr>
+<th>Proprietà</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ancoraggio</td>
+<td>Stabilisce come l'immagine è legata al testo.</td>
+</tr>
+<tr>
+<td>Scorrimento</td>
+<td>Stabilisce il modo in cui il testo scorre sull'immagine e se può attraversarla.</td>
+</tr>
+<tr>
+<td>Allineamento</td>
+<td>Stabilisce l'allineamento dell'immagine rispetto all'ancoraggio.</td>
+</tr>
+<tr>
+<td>Bordi e distanza dal testo</td>
+<td>Sono parametri che si possono modificare dalle proprietà dell'immagine.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fontwork">Fontwork</h3>
+<p>I Fontwork sono font speciali tramite le quali inserire un testo
+accattivante e molto evidente dei documenti. È una possibilità
+utilizzata raramente nei documenti e solitamente riservata ai volantini,
+biglietti di auguri, etc...</p>
+<p>Per inserire un fontwork con scritto WRITER, dal menù INSERISCI
+selezionare FONTWORK; nella finestra che viene aperta selezionare un
+fontwork fra quelli mostrati.</p>
+<p>Nel fontwork inserito (con la scritta di default FONTWORK) fare doppio
+click e procedere alla modifica del testo da visualizzare. ESC per
+concludere. Clic sinistro sopra la scritta per attivare i bordi di
+ridimensionamento. Tutto qui :)</p>
+<h2 id="esercizi">Esercizi</h2>
+<p>Gli esercizi sono... nel PC del prof. Qui trovate elencati solo il
+codice dell'esercizio (ad esempio: W01) e gli argomenti su cui esso si
+basa.</p>
+<p><strong>Esercizi W0x</strong></p>
+<p>Esercizi con gli stili predefiniti, sommario, intestazione e piè di pagina.</p>
+<p><strong>Esercizi W1x</strong></p>
+<p>Esercizi con gli stili personali (da creare).</p>
+<p><strong>Esercizi W2x</strong></p>
+<p>Esercizi con le immagini</p>
+<p><strong>Esercizi W3x</strong></p>
+<p>Esercizi con le tabelle</p>
+<p><strong>Esercizi W4x</strong></p>
+<p>Esercizi complessi, contenenti tutte le cose studiate, simili alla verifica.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Torna su
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Piede" >
+        
+          
+          <a href="../00_intro/" class="md-footer__link md-footer__link--prev" aria-label="Precedente: Introduzione">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Precedente
+              </span>
+              <div class="md-ellipsis">
+                Introduzione
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../52_calc/" class="md-footer__link md-footer__link--next" aria-label="Successivo: Calc">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Successivo
+              </span>
+              <div class="md-ellipsis">
+                Calc
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Andrea Diamantini (c) 2022-doomsday<br> <a href="#__consent">Change Cookie Settings</a><br> This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+
+  
+
+<h4>Consenso all'uso dei Cookie(s)</h4>
+<p>Questo sito memorizza alcuni cookies solo per riconoscere un visitatore  che non è alla sua prima visita e alcune preferenze, come il tema di visualizzazione della pagina selezionato.<br> Se non acconsenti, questa finestra riapparirà ogni volta che riapri il sito.<br> Se vuoi cambiare le tue scelte, in fondo alla pagina trovi un link per modificarle ;)
+</p>
+<input class="md-toggle" type="checkbox" id="__settings" checked>
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accetta</button>
+    
+    
+    
+  
+    
+    
+      <button type="reset" class="md-button md-button--primary">Rifiuta</button>
+    
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.tabs", "navigation.sections", "navigation.top", "toc.integrate", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>

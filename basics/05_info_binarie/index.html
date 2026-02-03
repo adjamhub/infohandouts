@@ -1,0 +1,1692 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Andrea Diamantini">
+      
+      
+      
+        <link rel="prev" href="../01_storia/">
+      
+      
+        <link rel="next" href="../../hwsw/00_intro/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Rappresentare le Informazioni - Informatics Literacy Course</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#rappresentazione-delle-informazioni" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href="../.." title="Informatics Literacy Course" class="md-header__button md-logo" aria-label="Informatics Literacy Course" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Informatics Literacy Course
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Rappresentare le Informazioni
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="pink"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../00_intro/" class="md-tabs__link">
+          
+  
+  Basics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../hwsw/00_intro/" class="md-tabs__link">
+          
+  
+  Hardware & Software
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../libreoffice/00_intro/" class="md-tabs__link">
+          
+  
+  Libreoffice
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../web/00_intro/" class="md-tabs__link">
+          
+  
+  Web
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Informatics Literacy Course" class="md-nav__button md-logo" aria-label="Informatics Literacy Course" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Informatics Literacy Course
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_storia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Rappresentare le Informazioni
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Rappresentare le Informazioni
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#il-sistema-binario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Il sistema binario
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Il sistema binario">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esercizi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizi
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#il-sistema-esadecimale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Il sistema esadecimale
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Il sistema esadecimale">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esercizi_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizi
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rappresentazioni-binarie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rappresentazioni binarie
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rappresentazioni binarie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-numeri-interi" class="md-nav__link">
+    <span class="md-ellipsis">
+      I Numeri interi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-numeri-reali-standard-ieee-754" class="md-nav__link">
+    <span class="md-ellipsis">
+      I Numeri reali (standard IEEE 754)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-caratteri" class="md-nav__link">
+    <span class="md-ellipsis">
+      I caratteri
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#esercizi_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizi
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formati-dei-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formati dei file
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Formati dei file">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#il-formato-plain-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      Il formato plain text
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#immagini-bmp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Immagini bmp
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestione-dei-colori" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestione dei colori
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gestione dei colori">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sintesi-additiva-rgb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sintesi Additiva (RGB)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sintesi-sottrattiva-cmyk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sintesi Sottrattiva (CMYK)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hardware & Software
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Hardware & Software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hwsw/00_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hwsw/10_hw/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hardware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hwsw/20_sw/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Libreoffice
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Libreoffice
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libreoffice/00_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libreoffice/51_writer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Writer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libreoffice/52_calc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Calc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Web
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web/00_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web/10_html5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web/20_css/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web/30_js/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="rappresentazione-delle-informazioni">Rappresentazione delle Informazioni</h1>
+<p>In questo capitolo vedremo come funziona sommariamente il sistema di numerazione binario e lo utilizzeremo per cercare di rappresentare alcune delle informazioni
+di base più importanti!</p>
+<!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+<h2 id="il-sistema-binario">Il sistema binario</h2>
+<p>Il sistema di numerazione binario è un sistema numerico <strong><em>posizionale</em></strong> e <strong><em>in base 2</em></strong>, cioè che utilizza solo 2 cifre, solitamente 0 e 1, 
+per la rappresentazione di tutti i numeri.</p>
+<p>Un sistema di numerazione posizionale è quello che da valore alle cifre di un numero a seconda della posizione che queste vi occupano.</p>
+<p>Ad esempio nel numero decimale 37 tutti sappiamo benissimo che nonostante la cifra 3 sia più piccola della cifra 7, questa valga di più perché occupa la posizione delle decine, 
+mentre la cifra più grande vale meno perché occupa la posizione delle unità</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>37   =   3 x 10   +   7 x 1
+</code></pre></div>
+<p>Questo modo di ragionare e di scrivere i numeri deriva dal fatto che siamo abituati a lavorare in base 10, poiché abbiamo 10 dita e fin da bambini il 10 era sempre il punto d'arrivo della conta sulla dita.</p>
+<p>Nonostante ciò, altri modi di contare si sono sviluppati nella storia. Ad esempio le uova si contano a dozzine (per questo si vendono solitamente a gruppi di 6: due gruppi = una dozzina), i minuti e i secondi si contano a gruppi di sessanta, le ore a gruppi di 24 e così via.</p>
+<p>Nell'aritmetica decimale esistono 10 cifre diverse (da 0 a 9) e quando si deve indicare un numero più grande di 9, si comincia a raggruppare mettendo in evidenza “a gruppi di 10”. 
+Ecco che</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>37   =   3 decine   +   7 unità
+</code></pre></div>
+<p>Allo stesso modo si continua con le centinaia, che sono formate da 10 decine e così via. Ad esempio:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>582   =       500       +      80      +       2
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>      =   5 centinaia   +   8 decine   +   2 unità
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>      =     5 x 100     +    8 x 10    +     2x1
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>      =     5 x 10 alla 2    +   8 x 10 alla 1   +   2 x 10 alla 0
+</code></pre></div>
+<p>Notiamo soprattutto l'ultima rappresentazione. In questo modo si può indicare ogni gruppo con un indice dato dalla potenza da assegnare alla base per ottenerne il peso. Infatti le unità sono il gruppo 0 (10<sup>0</sup> = 1), le decine sono il gruppo 1 (10<sup>1</sup> = 10), le centinaia il gruppo 2 (10<sup>2</sup> = 100) e così via praticamente all'infinito.</p>
+<p>Se lavoriamo in base 2 con solo 2 cifre, gli unici numeri facili da rappresentare saranno proprio 0 e 1, mentre per 2 dovremo già iniziare a raggruppare. Così ad esempio:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>3 = 1 coppia  + 1 unità
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>5 = 1 doppia coppia + 0 coppie + 1 unità
+</code></pre></div>
+<p>Vediamo i primi 10 numeri rappresentati nel sistema di numerazione binaria:</p>
+<p><br></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"><strong>Decimale</strong></th>
+<th style="text-align: right;"><strong>Binario</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">101</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">110</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">111</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">1000</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1001</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Seguendo l'esempio precedente potremo stabilire una rappresentazione dei valori indicati in un numero binario:</p>
+<blockquote>
+<p>1001  =<br>
+<br>
+=  1 x 2<sup>3</sup>  +  0 x 2<sup>2</sup>  +  0 x 2<sup>1</sup>  +  1 x 2<sup>0</sup>  = <br>
+<br>
+=   1 x 8   +   0 x 4   +   0 x 2   +   1 x 1   = <br>
+<br>
+=     8     +     0     +     0     +     1     =   9</p>
+</blockquote>
+<p>In questo modo dato un qualsiasi numero binario (una sequenza di zeri e uni), potremo stabilire quale quantità esso rappresenti in decimale semplicemente applicando la metodologia appresa.</p>
+<p>Quale valore rappresenta il numero binario <code>101011</code>?</p>
+<blockquote>
+<p>101011 =<br>
+<br>
+=  1 x 2<sup>5</sup>  +  0 x 2<sup>4</sup>  +  1 x 2<sup>3</sup>  +  0 x 2<sup>2</sup>  +  1 x 2<sup>1</sup>  +  1 x 2<sup>0</sup>  = <br>
+<br>
+=   1 x 32  +   0 x 16  +   1 x 8   +   0 x 4   +   1 x 2   +  1 x 1  = <br>
+<br>
+=    32    +    0     +    8    +    0    +    2     +    1    = <br>
+<br>
+=   43</p>
+</blockquote>
+<p>Al contrario se vogliamo capire qual è la rappresentazione binaria di un numero decimale dobbiamo utilizzare la tecnica delle divisioni (intere) successive.</p>
+<p>Ad esempio, dato il numero 35, la sua rappresentazione binaria si ottiene dividendo (con resto) successivamente il numero fino ad ottenere quoziente zero; 
+alla fine si prende la fila dei resti ottenendo una sequenza di zeri e uni che sono il numero binario.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>35 / 2 = 17 con resto di 1
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>17 / 2 =  8 con resto di 1
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a> 8 / 2 =  4 con resto di 0
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a> 4 / 2 =  2 con resto di 0
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a> 2 / 2 =  1 con resto di 0
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a> 1 / 2 =  0 con resto di 1
+</code></pre></div>
+<p>da cui si desume che </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>35 (in base 10) = 100011 (in base 2)
+</code></pre></div>
+<h3 id="esercizi">Esercizi</h3>
+<p><strong>Esercizio 301</strong></p>
+<p>Convertire in binario i seguenti numeri decimali:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>23, 65, 109, 15, 48, 77, 12
+</code></pre></div>
+<hr>
+
+<p><strong>Esercizio 302</strong></p>
+<p>Convertire in decimale i seguenti numeri binari:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>10, 100, 1100, 10101010, 11001100, 11110000, 10010010, 10010110
+</code></pre></div>
+<!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+<h2 id="il-sistema-esadecimale">Il sistema esadecimale</h2>
+<p>Il sistema di numerazione esadecimale (a base 16) viene molto utilizzato in informatica per la sua relazione diretta fra una cifra decimale e quattro cifre binarie. Questa deriva direttamente dal fatto che 16 è una potenza di 2 (2<sup>4</sup> = 16).Viene dunque spesso utilizzato come “intermediario”, cioè come strumento di rappresentazione dei numeri binari quando questi sono troppo lunghi.</p>
+<p>Essendo un sistema a 16 cifre si utilizzano nella sua rappresentazione anche le prime 6 lettere dell'alfabeto (<code>A</code>, <code>B</code>, <code>C</code>, <code>D</code>, <code>E</code>, <code>F</code>).</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"><strong>DEC (base 10)</strong></th>
+<th style="text-align: right;"><strong>BIN (base 2)</strong></th>
+<th style="text-align: right;"><strong>HEX (base 16)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>0</strong></td>
+<td style="text-align: right;"><strong>0000</strong></td>
+<td style="text-align: right;"><strong>0</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>1</strong></td>
+<td style="text-align: right;"><strong>0001</strong></td>
+<td style="text-align: right;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>2</strong></td>
+<td style="text-align: right;"><strong>0010</strong></td>
+<td style="text-align: right;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>3</strong></td>
+<td style="text-align: right;"><strong>0011</strong></td>
+<td style="text-align: right;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>4</strong></td>
+<td style="text-align: right;"><strong>0100</strong></td>
+<td style="text-align: right;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>5</strong></td>
+<td style="text-align: right;"><strong>0101</strong></td>
+<td style="text-align: right;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>6</strong></td>
+<td style="text-align: right;"><strong>0110</strong></td>
+<td style="text-align: right;"><strong>6</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>7</strong></td>
+<td style="text-align: right;"><strong>0111</strong></td>
+<td style="text-align: right;"><strong>7</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>8</strong></td>
+<td style="text-align: right;"><strong>1000</strong></td>
+<td style="text-align: right;"><strong>8</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>9</strong></td>
+<td style="text-align: right;"><strong>1001</strong></td>
+<td style="text-align: right;"><strong>9</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>10</strong></td>
+<td style="text-align: right;"><strong>1010</strong></td>
+<td style="text-align: right;"><strong>A</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>11</strong></td>
+<td style="text-align: right;"><strong>1011</strong></td>
+<td style="text-align: right;"><strong>B</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>12</strong></td>
+<td style="text-align: right;"><strong>1100</strong></td>
+<td style="text-align: right;"><strong>C</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>13</strong></td>
+<td style="text-align: right;"><strong>1101</strong></td>
+<td style="text-align: right;"><strong>D</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>14</strong></td>
+<td style="text-align: right;"><strong>1110</strong></td>
+<td style="text-align: right;"><strong>E</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>15</strong></td>
+<td style="text-align: right;"><strong>1111</strong></td>
+<td style="text-align: right;"><strong>F</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Vista la contemporanea frequenza di numeri e lettere, per indicare che una sequenza è un numero esadecimale, si usa preporre la sigla <code>0x</code>, così che il numero <code>0x11</code> sia il numero esadecimale 11 (e non ad esempio l'11 decimale o il 3 binario).</p>
+<p>Per convertire un numero esadecimale in binario, basta solo consultare la tabella e apportare le opportune sostituzioni, in modo che, ad esempio, il numero esadecimale <code>0x3F5</code>,
+corrisponda al numero binario:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>3 ==&gt; 0011
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>F ==&gt; 1111
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>5 ==&gt; 0101
+</code></pre></div>
+<p>Da cui</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>0x3F5 = 0011.1111.0101
+</code></pre></div>
+<p>Analogamente se il nostro obiettivo è trasformare un numero binario in esadecimale basterà solo suddividere le sue cifre a gruppi di 4 e osservare la tabella.</p>
+<p>Ad esempio, il numero binario <code>11101</code> si può dividere nei due gruppi da 4 <code>0001</code> e <code>1101</code>: il gruppo più a sinistra si può solitamente rendere da 4 aggiungendo zeri a piacere.</p>
+<p>Da cui:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>0001 ==&gt; 1
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>1101 ==&gt; D
+</code></pre></div>
+<p>Quindi la sequenza binaria 11101 si rappresenta in esadecimale come 1D:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>0001.1101 = 11101 = 0x1D
+</code></pre></div>
+<p>Ok… adesso facciamo qualche esercizio per assicurarci che tutti abbiano capito :)</p>
+<h3 id="esercizi_1">Esercizi</h3>
+<p><strong>Esercizio 311</strong></p>
+<p>Convertire i seguenti numeri in binario e rappresentarli secondo la notazione esadecimale:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>10, 100, 150, 1000, 2000, 0, 32767, 1024, 127, 255
+</code></pre></div>
+<hr>
+
+<p><strong>Esercizio 312</strong></p>
+<p>Calcolare il numero binario e il numero decimale corrispondente al seguente numero esadecimale:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>0x0123, 0xAD45, 0x98A1, 0x1824, 0x8FFF, 0xFFFF, 0x0001, 0x9999
+</code></pre></div>
+<!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+<h2 id="rappresentazioni-binarie"><strong>Rappresentazioni binarie</strong></h2>
+<p>Nella prossima disamina andremo a vedere le applicazioni principali dei sistemi di numerazione binario ed esadecimale in informatica.</p>
+<p>I concetti di base sono facili: le memorie funzionano con tecnologie di tipo elettrico (acceso/spento) oppure elettromagnetico (polo positivo/polo negativo), quindi ogni tipo di dato, per essere memorizzato, deve essere convertito in binario.</p>
+<p>Di seguito alcune spiegazioni su come sono convertiti in binario alcuni tipi di dati. Si inizia con i numeri, interi e reali, si passa ai caratteri, fino ad arrivare ai file veri e propri.</p>
+<p>Cominciamo!</p>
+<h3 id="i-numeri-interi">I Numeri interi</h3>
+<p>In informatica i numeri interi sono un sottoinsieme finito dei numeri interi così come sono definiti in matematica. Questo ovviamente perché lo scopo della trattazione dei numeri interi in informatica, così come di ogni altro tipo di dato è la mera digitalizzazione, elaborazione e memorizzazione su supporto fisico.</p>
+<p>In genere lo spazio destinato ad un numero intero è uno spazio fisso, grande come la lunghezza di parola della CPU che lo dovrà elaborare. Attualmente le più comuni CPU in commercio hanno una lunghezza di parola di 64 bit.</p>
+<p>Vediamo di mettere bene in evidenza le differenze fra ciò che in matematica siamo soliti chiamare un numero intero e ciò che questo è in informatica:</p>
+<table>
+<thead>
+<tr>
+<th><strong>In matematica</strong></th>
+<th><strong>In informatica</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>l'insieme degli interi è infinito</td>
+<td>l'insieme degli interi è finito e ben definito</td>
+</tr>
+<tr>
+<td>Ogni numero viene rappresentato solo con il numero di cifre necessarie</td>
+<td>Tutti i numeri interi hanno lo stesso numero di cifre</td>
+</tr>
+<tr>
+<td>I segni +/- vengono indicati, solitamente davanti al numero (es: -17, + 13)</td>
+<td>I segni +/- sono compresi nella rappresentazione del numero intero</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Semplificazione</p>
+<p>Per semplificare calcoli e ragionamenti, gli esempi sottostanti sono sviluppati con parole di 16 bit invece di 64!!!</p>
+<p>I concetti si capiscono ugualmente... ma i calcoli sono molto più semplici (e le sequenze di zeri e/o di uni hanno un termine!)</p>
+</div>
+<p>Per la rappresentazione dei numeri interi, occorre distinguere fra numeri positivi e negativi. </p>
+<p>Il caso dei numeri positivi è molto semplice, dato un numero, ad esempio <code>35</code>, bisognerà prima di tutto verificare se appartiene al range dei numeri rappresentabili 
+(a 16 bit sono rappresentabili numeri fino a 5 cifre, positivi e negativi. A 64 bit si sale fino a numeri di 20 cifre...) .</p>
+<p>In seguito procedere alla trasformazione binaria:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>35 = 100011
+</code></pre></div>
+<p>Ovviamente, davanti a questa cifra dobbiamo mettere un botto di zeri, fino a rappresentare un numero con 16 cifre! Capite bene la comodità della rappresentazione esadecimale <img alt="😄" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f604.png" title=":smile:" /></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>35 = 0000.0000.0010.0011 = 0x0023
+</code></pre></div>
+<p>Nel caso di numeri negativi, ad esempio <code>-19</code>, verificata l'appartenenza al range di rappresentazione, bisognerà utilizzare la cosiddetta tecnica del “<strong><em>complemento a due</em></strong>”, 
+eseguendo le seguenti operazioni:</p>
+<ul>
+<li>prendere la parte positiva e trasformarla in binario:</li>
+</ul>
+<p>da -19 si prende la parte positiva che è 19. La rappresentazione binaria di 19 è:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>19 = 10011
+</code></pre></div>
+<ul>
+<li>Riempire il numero con gli zeri davanti fino a 16 cifre:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>19 = 0000.0000.0001.0011
+</code></pre></div>
+<ul>
+<li>Rovesciare la rappresentazione, invertendo ZERI e UNI</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>0000.0000.0001.0011 diventa
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>1111.1111.1110.1100
+</code></pre></div>
+<ul>
+<li>Si aggiunge UNO</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>1111.1111.1110.1100 +
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>                  1 =
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>-------------------
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>1111.1111.1110.1101
+</code></pre></div>
+<p>Da cui, la rappresentazione del numero diventa:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>-19 = 1111.1111.1110.1101 = 0xFFED
+</code></pre></div>
+<p>Con la tecnica del complemento a due, il primo bit a sinistra è indice del segno del numero rappresentato e precisamente tutti i numeri che iniziano con ZERO sono positivi, mentre tutti i numeri che iniziano per UNO sono negativi.</p>
+<h3 id="i-numeri-reali-standard-ieee-754">I Numeri reali (standard IEEE 754)</h3>
+<p>L'insieme dei numeri reali è un insieme infinito e denso; in matematica “denso” significa che presi comunque due numeri reali, esistono sempre infiniti numeri compresi fra loro.</p>
+<p>I numeri reali rappresentabili in informatica (e memorizzabili nelle memorie dei PC) sono però chiaramente solo un insieme finito e discreto (il contrario di denso). Questo significa che i numeri rappresentabili sono tutti compresi in un intervallo finito e che anche all'interno di quell'intervallo sono una minuscola parte di numeri può essere rappresentata.</p>
+<p>In ogni caso, la rappresentazione dei reali è uno dei argomenti più dibattuti e su cui si sono concentrati gli sforzi negli anni. A livello di rappresentazione, il concetto che ha avuto la meglio sugli altri è il metodo definito “a virgola mobile” o <strong><em>floating point number</em></strong>, rinominato in standard IEEE 754.</p>
+<p>Vediamo il procedimento di trasformazione di un numero reale nella sua rappresentazione.</p>
+<ol>
+<li>Il numero reale deve essere prima rappresentato in binario, convertendo opportunamente la parte intera e la parte frazionaria.</li>
+<li>Il numero binario così ottenuto viene trasformato in notazione esponenziale normalizzata, cioè nella forma:</li>
+</ol>
+<blockquote>
+<p>±M x 2<sup>E</sup> <br>
+<br>
+dove 1.0 ≤ M ≤ 2.0</p>
+</blockquote>
+<p>Usando la forma esponenziale normalizzata, per identificare un numero sono necessarie 3 informazioni:</p>
+<ol>
+<li>segno (S)</li>
+<li>esponente (E)</li>
+<li>mantissa (M)</li>
+</ol>
+<p>Lo standard IEEE 754 prevede che un numero reale venga rappresentato con 64 bit così suddivisi:</p>
+<ul>
+<li>1 bit per il segno</li>
+<li>11 bit per l'esponente</li>
+<li>52 bit per la mantissa</li>
+</ul>
+<p>Basta! Mi fermo qui. Mi sembra sufficiente…</p>
+<h3 id="i-caratteri">I caratteri</h3>
+<p>Una codifica per i caratteri che si vogliono rappresentare è definita dalla corrispondenza tra l'insieme di caratteri che si vogliono rappresentare e le parole di un codice.</p>
+<p>Nel nostro caso il codice utilizza cifre binare con un numero di bit non sempre predefinito. L'insieme di caratteri che si vuole rappresentare invece è formato da tutte le lettere, le cifre e i simboli (genericamente, caratteri) necessari per formare le parole di un linguaggio.</p>
+<p>Per un certo insieme di caratteri possono esistere quindi codifiche diverse: con un numero diverso di bit per la codifica, con una corrispondenza diversa codice-carattere e così via.</p>
+<p>In generale, per definire un set di caratteri occorre:</p>
+<ul>
+<li>l'insieme di codici utilizzato</li>
+<li>l'insieme di caratteri da rappresentare</li>
+<li>una corrispondenza fra questi.</li>
+</ul>
+<p><br></p>
+<p><strong>Codifica US ASCII</strong></p>
+<p><img style="width: 40%; float:right; margin-left: 10px" alt="ASCII Table" src="../images/ASCII_table.jpg"></p>
+<p>La codifica US ASCII (<strong><em>American Standard Code for  Information Interchange</em></strong>) è il primo set di caratteri congegnato che ha avuto diffusione internazionale.</p>
+<p>Nella sua versione estesa, essa rappresenta un set di 256 caratteri utilizzando numeri binari a 8 cifre. Infatti con 8 cifre binarie si possono rappresentare 2<sup>8</sup> = 256 numeri diversi.</p>
+<p>La codifica ASCII utilizza quindi una corrispondenza biunivoca carattere-codice, ove:</p>
+<ul>
+<li>Gli elementi da 0 a 31 sono i cosiddetti “<strong><em>caratteri di controllo</em></strong>”.</li>
+<li>Gli elementi da 32 a 126 sono i cosiddetti “<strong><em>caratteri stampabili</em></strong>” (vedi tabella a fianco).</li>
+<li>Gli elementi da 128 a 255 fanno parte del cosiddetto <strong><em>set esteso di caratteri</em></strong>.</li>
+</ul>
+<p><br></p>
+<p><strong>Standard ISO 8859</strong></p>
+<p>Osservando meglio la tabella ASCII ci si accorge della carenza di molti caratteri in uso nelle lingue più comuni; citando solo l'italiano, mancano ad esempio tutte le lettere accentate. Di fatto solo per inglese, latino e swahili sono sufficienti i 128 caratteri di base e per colmare questa mancanza si utilizzano codici a 8 bit in cui anche il bit più significativo cambia valore.</p>
+<p>Nella realtà però non esiste un unico codice (ASCII “esteso”) a 8 bit, ma ne esistono tanti, chiamati anche tabelle di codici. Tutti le tabelle di codici sono comunque compatibili con ASCII, cioè rimangono identiche nella rappresentazione dei primi 127 caratteri.</p>
+<p>Vediamo un elenco degli standard ISO 8859 più famosi e utilizzati in qualche parte del mondo:</p>
+<table>
+<thead>
+<tr>
+<th><strong>ISO 8859-1</strong></th>
+<th><strong>Lingue europee occidentali</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ISO 8859-2</td>
+<td>Lingue europee orientali</td>
+</tr>
+<tr>
+<td>ISO 8859-5</td>
+<td>Cirillico</td>
+</tr>
+<tr>
+<td>ISO 8859-6</td>
+<td>Arabo</td>
+</tr>
+<tr>
+<td>ISO 8859-8</td>
+<td>Ebraico</td>
+</tr>
+<tr>
+<td>ISO 8859-11</td>
+<td>Thailandese</td>
+</tr>
+<tr>
+<td><strong>ISO 8859-15</strong></td>
+<td><strong>Lingue europee occidentali con l'Euro</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Questo significa che ognuno di queste codifiche ha gli stessi caratteri nei primi 128 posti (numeri binari a 8 bit con cifra più significativa uguale a zero), mentre rappresentano caratteri diversi</p>
+<p><br></p>
+<p><strong>Codifica UNICODE</strong></p>
+<p>La codifica ISO 646 a 8 bit non è adatta per le lingue orientali che usano migliaia di ideogrammi ciascuno dei quali corrisponde non ad una lettera, ma ad un intero concetto.</p>
+<p>Per questo è necessaria una codifica che utilizzi almeno 16 bit (e possa rappresentare quindi fino a 65.536 caratteri).</p>
+<p>La risposta a questa necessità sta nella cosiddetta codifica UNICODE. Questa codifica viene utilizzata nei sistemi operativi Microsoft Windows (per la memorizzazione dei nomi dei file e dei simboli) e dal linguaggio di programmazione Java per la codifica di tutti i caratteri.</p>
+<p>Inoltre Unicode ha l'importante proprietà che i suoi primi 128 caratteri sono identici a quelli del codice ASCII e i primi 256 allo standard ISO 8859-1.</p>
+<p>Tuttavia però due serie di motivi hanno portato Unicode a non affermarsi quale standard unico e assoluto, come i suoi creatori avrebbero voluto. Questi problemi sono:</p>
+<ul>
+<li><strong><em>Retrocompatibilità</em></strong>. Poiché Unicode utilizza sempre 16 bit per ogni carattere, la compatibilità con i set a 8 bit non è sempre banale.</li>
+<li><strong><em>Spreco di spazio</em></strong>. Poiché ogni carattere sarebbe passato da dimensione 1 a 2 byte, tutti i file sarebbero automaticamente aumentati, a volte raddoppiati di dimensione, molto spesso senza alcuna necessità.</li>
+</ul>
+<p><br></p>
+<p><strong>Codifica UTF-8</strong></p>
+<p>UTF-8 è una codifica dei caratteri UNICODE in sequenze di lunghezza variabile di byte (da 1 a 4). Questo significa che tramite UTF-8 è possibile rappresentare tutti i caratteri esistenti per tutte le lingue conosciute esattamente come con UNICODE, ma mentre quello prevede una lunghezza fissa dei caratteri a 2 bytes, con UTF-8 la codifica varia da 1 a 4 bytes (4 sole possibili alternative; niente pezzi di byte).</p>
+<p>Per esempio un solo byte è necessario per rappresentare i primi 128 caratteri ASCII, rendendo queste due importanti codifiche vagamente compatibili tra loro.</p>
+<p>L'organismo <strong>IETF</strong> (Internet Engineering Task Force), la comunità di tecnici e specialisti che si occupa dello sviluppo e della promozione delle tecnologie del web, richiede che tutti i protocolli internet identifichino la codifica di caratteri che utilizzano e che siano compatibili almeno con UTF-8.</p>
+<h3 id="esercizi_2">Esercizi</h3>
+<p><strong>Esercizio 321 (interi)</strong></p>
+<p>Scrivere la rappresentazione esadecimale (a 16bit) dei seguenti numeri interi:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>-25, +63, -139, +17, -48, +72
+</code></pre></div>
+<hr>
+
+<p><strong>Esercizio 322 (reali)</strong></p>
+<p>Scrivere la rappresentazione esadecimale (a 16bit) dei seguenti numeri reali:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>-1.23, +1078.01, -139.99, +0.00042, -0.091, +73.73
+</code></pre></div>
+<hr>
+
+<p><strong>Esercizio 323 (caratteri)</strong></p>
+<p>Convertire in byte, secondo la specifica ASCII le seguenti frasi:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>frase 1) &quot;un, due, tre, stella!&quot;
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>frase 2) &quot;abracadabra&quot;
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>frase 3) &quot;ASCII si pronuncia aschi, come il cane&quot;
+</code></pre></div>
+<p><br>
+<br></p>
+<!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+<h2 id="formati-dei-file">Formati dei file</h2>
+<p>In informatica, il formato di un file è la convenzione che viene utilizzata per organizzare, memorizzare e recuperare i contenuti di un file. Questo, per l'utente che utilizza il sistema, si traduce nella possibilità di poter visualizzare, interpretare e modificare (più o meno) a piacimento i contenuti di un file.</p>
+<p>Poiché un file rimane sempre e comunque una sequenza ordinata di byte (ed esistono solo 256 byte diversi) i formati stabiliscono una convenzione di interpretazione per il gruppo di byte che compone il file in questione.</p>
+<p>L'identificazione di un formato (testo, immagine, multimedia, ecc..) viene di solito ottenuta dal Sistema Operativo, tramite una (o più insieme) di queste tecniche:</p>
+<p><strong>Estensione del file</strong></p>
+<p>si è soliti indicare alla fine del nome del file, una sequenza (lunga 3 lettere per motivi storici) che ne identifica il formato. Ad esempio il file “pippo.txt” è un file di testo, mentre il file “pluto.jpg” una immagine.</p>
+<p><strong>Magic number</strong></p>
+<p>I primi due o più byte di un file fanno da identificatori di un tipo di file. Ad esempio la sequenza 0x3533 identifica uno script di shell (linux), mentre la sequenza 0xFFD8 identifica una immagine .jpg</p>
+<p><strong>Metadati</strong></p>
+<p>Alcuni filesystem (ad esempio HFS) affiancano informazioni relative ad esso, tra cui il formato.</p>
+<p>Qua nel seguito introduciamo, almeno in parte, tre tra i formati più semplici e famosi, per meglio interpretare i concetti introdotti.</p>
+<h3 id="il-formato-plain-text">Il formato plain text</h3>
+<p>Il formato plain text è il più semplice formato di file esistente. È un formato di puro testo con corrispondenza (quasi sempre) 1 a 1 tra i byte contenuti e una particolare codifica come ASCII o ISO 8859.</p>
+<p>Ovviamente lo scopo per cui sono nati i file di testo, e tutt'ora un utilizzo molto frequente, è la lettura/scrittura diretta da parte degli utenti. La mancanza di formattazione li rende poveri dal punto di vista estetico, ma in compenso grazie a questa semplicità non occorrono particolari programmi per leggerli, e spesso possono essere trasferiti direttamente da un sistema operativo all'altro.</p>
+<p>Per questo quasi tutti i software sono accompagnati da un file di testo semplice che ne dà una breve descrizione, spesso chiamato leggimi (o README in inglese). Anche il codice sorgente dei programmi viene scritto in puro testo.</p>
+<p>Ci sono alcune limitazioni all'universalità dei file di testo:</p>
+<ul>
+<li>La codifica non è sempre ovvia, e quando il sistema non la riconosce o non la supporta, il file diventa illeggibile.</li>
+<li>I maggiori sistemi usano notazioni diverse per il carattere di a capo: MAC OS usa CR (Carriage Return, ASCII 13), UNIX usa LF (Line Feed, ASCII 10), Windows usa CR/LF.</li>
+</ul>
+<h3 id="immagini-bmp">Immagini bmp</h3>
+<p>Il formato di file BITMAP, come dice il nome, prevede una semplice mappa dei bit che compongono l’immagine.</p>
+<p>La struttura del file è molto semplice, perché è possibile suddividerla in tre parti:</p>
+<ol>
+<li><strong>bitmap file header</strong> (14 byte), che contiene informazioni come la grandezza del file (es: 1000x500);</li>
+<li><strong>bitmap info header</strong> (40 byte), con informazioni tipo la mappa dei colori usata e la sua profondità (quanti byte per un colore?)</li>
+<li><strong>mappa dei pixel</strong> (altezza x larghezza x profondità del colore) la struttura che identifica l'immagine.</li>
+</ol>
+<!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+<h2 id="gestione-dei-colori">Gestione dei colori</h2>
+<p><img style="width: 50%; float:right; margin-left: 10px" alt="ASCII Table" src="../images/colori.jpg"></p>
+<p>Si rappresentano in informatica in 2 modalità:</p>
+<h3 id="sintesi-additiva-rgb">Sintesi Additiva (RGB)</h3>
+<p>La sintesi delle luci: se punti una luce rossa nello stesso punto di una luce verde, vedi un colore giallo.</p>
+<p>I colori fondamentali sono Rosso (Red), Verde (Green), Blu (Blue).</p>
+<p>La somma dei 3 colori fondamentali fa il BIANCO!!!</p>
+<p>Ogni colore fondamentale costa un byte, quindi ogni colore "pesa" 3 byte, ovvero sono rappresentabili 2<sup>24</sup> colori diversi: circa 16 milioni di colori!</p>
+<p>Il web utilizza questa sintesi dei colori.</p>
+<p>La sua rappresentazione è data dai 3 byte, tipicamente indicati con la sintassi esadecimale:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a># RRGGBB
+</code></pre></div>
+<p>Ad indicare che i primi 2 numeri rappresentano il byte che indica la quantità di rosso presente, i secondi la quantità di verde, gli ultimi la quantità di blu.</p>
+<h3 id="sintesi-sottrattiva-cmyk">Sintesi Sottrattiva (CMYK)</h3>
+<p>La sintesi dei colori a tempera: mischi rosso e giallo e viene arancione.</p>
+<p>I colori fondamentali sono i colori complementari dei colori primari della sintesi additiva: Blu Ciano (C) come complementare del Rosso, Rosso Magenta (M) complementare del Verde e Giallo (Y) complementare del Blu. In questa sintesi inoltre si indica anche il grigio (K).</p>
+<p>La somma dei 3 colori fondamentali fa il NERO!!!!</p>
+<p>Ogni colore fondamentale costa un byte, quindi ogni colore "pesa" 4 byte, ovvero sono rappresentabili 2<sup>32</sup> colori diversi: circa 4 miliardi di colori!</p>
+<p>Questa particolare sintesi, seppure più pesante della precedente, permette di arrivare ad un numero quasi incredibile di colori diversi. La presenza del grigio come colore primario permette nella realtà una implementazione dei colori Nero e Bianco più che perfetta: avete mai sentita la pubblicità delle TV che fanno vedere un nero bellissimo?! Bene… quelle TV "colorano" lo schermo di nero invece di tenerle spente. Usano CMYK!!!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Torna su
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Piede" >
+        
+          
+          <a href="../01_storia/" class="md-footer__link md-footer__link--prev" aria-label="Precedente: Storia">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Precedente
+              </span>
+              <div class="md-ellipsis">
+                Storia
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../hwsw/00_intro/" class="md-footer__link md-footer__link--next" aria-label="Successivo: Introduzione">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Successivo
+              </span>
+              <div class="md-ellipsis">
+                Introduzione
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Andrea Diamantini (c) 2022-doomsday<br> <a href="#__consent">Change Cookie Settings</a><br> This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+
+  
+
+<h4>Consenso all'uso dei Cookie(s)</h4>
+<p>Questo sito memorizza alcuni cookies solo per riconoscere un visitatore  che non è alla sua prima visita e alcune preferenze, come il tema di visualizzazione della pagina selezionato.<br> Se non acconsenti, questa finestra riapparirà ogni volta che riapri il sito.<br> Se vuoi cambiare le tue scelte, in fondo alla pagina trovi un link per modificarle ;)
+</p>
+<input class="md-toggle" type="checkbox" id="__settings" checked>
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accetta</button>
+    
+    
+    
+  
+    
+    
+      <button type="reset" class="md-button md-button--primary">Rifiuta</button>
+    
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.tabs", "navigation.sections", "navigation.top", "toc.integrate", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
